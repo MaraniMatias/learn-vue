@@ -1,5 +1,8 @@
 # learn-vue
+
 Aprender vuejs 2.5 material para la cátedra de TTADS, UTN-frro
+
+Para ampliar los temas de esta guia sugiero ver la [documentación oficial de Vue](https://vuejs.org/v2) o [en este repocitorio](https://github.com/MaraniMatias/vuejs-talk-2017)
 
 ## Requisitos previos
 
@@ -15,7 +18,7 @@ npm install -g vue-cli
 
 ### Primer componente
 
-El Vue más simple posible configurado en un solo archivo HTML.
+La aplicación más simple que podemos construir con Vue en un solo archivo HTML.
 
 ```sh
 # Crear un directorio donde vamos a trabajar
@@ -30,7 +33,7 @@ Incluimos el core de Vue `<script src="https://unpkg.com/vue"></script>`.
 
 Crearemos un componente básico
 
-En nuestro HTML incluimos las siguientes lines que pertenece ala estructura de nuestro componente
+En nuestro HTML incluimos las siguientes lines que pertenece a la estructura de nuestro componente
 
 ```html
   <template id="hello">
