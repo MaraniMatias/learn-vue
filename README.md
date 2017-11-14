@@ -104,3 +104,170 @@ Para poder usar el método, lo usamos con el evento `click` del botón
   </div>
 </template>
 ```
+
+## 2 - Ejemplo Webpack-Simple
+
+Para este ejemplo usaremos el cliente de Vue
+
+Usaremos la plantilla `webpack-simple` y se creara en la carpeta `mi-app-webpack-simple`
+```sh
+vue init webpack-simple mi-app-webpack-simple
+```
+
+Debemos instalar las dependencias que usaremos para construir nuestra app
+```sh
+cd mi-app-webpack-simple
+npm install
+```
+
+Para comenzar a trabajar `npm run dev` de esta manera cada vez que realicemos un cambio se "compila" automáticamente y refresca el navegador.
+
+Estructura de nuestra App
+
+```text
+▾ mi-app-webpack-simple/
+  ▸ node_modules/
+  ▾ src/
+    ▸ assets/
+        App.vue
+        main.js
+    + index.html
+      package-lock.json
+      package.json
+      README.md
+    + webpack.config.js
+```
+
+El archivo `index.html` es la pagina principal de nuestra aplicación.
+
+El archivo `webpack.config.js` contiene la configuración para [webpack](http://webpack.js.org/).
+
+En la carpeta `src` (source) en donde están los archivos fuente de nuestra aplicación.
+
+El archivo `main.js` es por donde inicia nuestra App, y donde podemos incluir plugin y configurar Vue.
+
+Los archivos `.vue`  como `App.vue` con archivos especiales o creados por  el equipo de Vue, para poder visualizar correctamente el contenido podes usar estos [plugin para tu IDE](https://github.com/vuejs/awesome-vue#source-code-editing).
+
+Estos archivos ([.vue](https://github.com/MaraniMatias/vuejs-talk-2017#componentes-de-un-solo-archivo-vue)) son archivos XML con tres bloques **Template**, **script** y **styles**, de esta manera un solo archivo por componente, (si quieres podes usar archivos individuales)
+
+Otro detalle importante es que al usar webpack podemos usar [bable](https://babeljs.io/) de esta manera escribimos javascript en su version 6 o mas reciente y por medio de bable es interpretado para dar como resultado un javascript más estándar y que pueda ser usado en cualquier navegador actual.
+
+### Crearemos un componente.
+
+Por cuestiones de organizaciones crearemos un a carpeta `components` dentro de `scr`, y dentro un archivo `hello.vue`
+
+```html
+<template>
+<div>
+  <h1>{{ message }}</h1>
+  <input v-model="message">
+  <button v-on:click="change('message')">change</button>
+</div>
+</template>
+
+<script>
+export default {
+  data: function () {
+    return {
+      message: 'Welcome to your Vue.js app!'
+    };
+  },
+  methods: {
+    change: function (value) {
+      this.message = "new " + value;
+    }
+  }
+}
+</script>
+
+<style scoped>
+h1 {
+  font-style: italic;
+  color: blue;
+}
+</style>
+```
+
+Para poder usar nuestro componente debemos registrarlo en el componente que lo vamos a usar en teste caso `App.vue`
+
+```html
+<script>
+import Hello from './components/hello.vue';
+
+export default {
+  name: 'app',
+  components: {
+    'hello': Hello
+  },
+  data() {
+    return {
+      msg: 'Welcome to Your Vue.js App'
+    }
+  }
+}
+</script>
+```
+
+Ahora poder incorporar `<hello></hello>` dentro del div `#app`
+
+### Agregamos un componente dentro de hello
+
+Lo llamaremos `child.vue`
+
+```html
+<template>
+<div>
+  <h1>{{ reversedMessage }}</h1>
+</div>
+</template>
+
+<script>
+export default {
+  data: function () {
+    return {
+      message: 'Welcome to your Vue.js app!'
+    };
+  },
+ computed: {
+    reversedMessage: function () {
+      return this.message.split('').reverse().join('')
+    }
+  }
+}
+</script>
+
+<style scoped>
+h1 {
+  font-style: italic;
+  color: red;
+}
+</style>
+```
+
+Registramos el componente `child` dentro de `hello`
+
+Agregamos `import Child from './child.vue';` dentro de la etiquete `script` y dentro del objeto a exportar la propiedad components
+
+```html
+<script>
+import Child from './child.vue';
+
+export default {
+  components: {
+    'Child': Child
+  },
+  //...
+  }
+</script>
+```
+
+Listo ahora podemos usar las etiquetas HTML `<child></child>`
+
+## Devtool
+
+Para ayudarnos a ver ver la estructura de nuestra Vue app podemos usar la [DevTool](https://github.com/vuejs/vue-devtools) es un plugin para nuestro navegador en donde vemos el árbol de elementos HTML, los componentes usados con sus propiedades, datos, métodos, etc.
+
+Podes descargarlos desde este [link](https://github.com/vuejs/vue-devtools#installation)
+
+
+
