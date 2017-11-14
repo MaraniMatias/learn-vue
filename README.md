@@ -101,4 +101,3 @@ Para poder usar el método, lo usamos con el evento `click` del botón
   </div>
 </template>
 ```
-
