@@ -2,7 +2,7 @@
 
 Aprender vuejs 2.5 material para la cátedra de TTADS, UTN-frro
 
-Para ampliar los temas de esta guia sugiero ver la [documentación oficial de Vue](https://vuejs.org/v2) o [en este repocitorio](https://github.com/MaraniMatias/vuejs-talk-2017)
+Para ampliar los temas de esta guia sugiero ver la [documentación oficial de Vue](https://es-vuejs.github.io/vuejs.org/) o [en este repocitorio](https://github.com/MaraniMatias/vuejs-talk-2017)
 
 ## Requisitos previos
 
@@ -344,4 +344,17 @@ En el archivo `main.js`, la linea `import router from './router';` solo importa 
 
 En el archivo `App.vue` entraremos un tag `<router-view/>` es el elemento donde se incorporan los componentes que dependen de la URL.
 
+## Vuex
+
+Para aplicaciones donde necesitemos compartir información entre varios componentes podemos usar un lugar común donde guardar y modificar esas información, para ello usamos el plugin [Vuex](https://vuex.vuejs.org/en/)
+
+Esta imagen muestra el concepto de Vuex
+
+![](https://raw.githubusercontent.com/MaraniMatias/vuejs-talk-2017/master/img/vuex.png)
+
+* **State** Es el lugar donde esta la información a compartir con nuestro componente.
+* **Actions** Cuando un componente decide obtener información de la API despacha (dispatch) una Acción y esta consulta al backend.
+* **Mutations** Cuando la información que trae del backend o otra que deseamos percitir en el State confirmamos (commit) una mutación, la encargada de modificar el estado
+
+Es importante no saltear el flujo para cambiar el estado, si un componente desea cambiar la información sin consultar al backend debería pasar por actions y después por mutación.
 
