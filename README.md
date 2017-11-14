@@ -129,13 +129,13 @@ Estructura de nuestra App
   ▸ node_modules/
   ▾ src/
     ▸ assets/
-        App.vue
-        main.js
-    + index.html
-      package-lock.json
-      package.json
-      README.md
-    + webpack.config.js
+      - App.vue
+      - main.js
+    - index.html
+    - package-lock.json
+    - package.json
+    - README.md
+    - webpack.config.js
 ```
 
 El archivo `index.html` es la pagina principal de nuestra aplicación.
