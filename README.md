@@ -105,7 +105,7 @@ Para poder usar el método, lo usamos con el evento `click` del botón
 </template>
 ```
 
-## 2 - Ejemplo Webpack-Simple
+## 2 - Ejemplo plantilla Webpack-Simple
 
 Para este ejemplo usaremos el cliente de Vue
 
@@ -269,5 +269,79 @@ Para ayudarnos a ver ver la estructura de nuestra Vue app podemos usar la [DevTo
 
 Podes descargarlos desde este [link](https://github.com/vuejs/vue-devtools#installation)
 
+## 3 - Ejemplo plantilla Webpack
+
+Los ejemplos anteriores son útiles para aplicaciones pequeñas, pero en la vida real la mayoría de las aplicaciones necesitan una estructura más amplia por eso usaremos la plantilla `webpack`.
+
+```sh
+vue init webpack my-app-webpack
+```
+
+Por se nuestro primer proyecto lo configuraremos de la siguiente manera:
+
+```sh
+? Vue build
+❯ Runtime + Compiler: recommended for most users
+```
+
+```sh
+? Install vue-router? (Y/n) Y
+```
+
+Opcional, [ESlint](https://eslint.org/) sirbe para escribir javasctipt con buenas practicas.
+```sh
+? Use ESLint to lint your code? (Y/n) Y
+❯ Airbnb (https://github.com/airbnb/javascript)
+```
+Elegimos No para la siguiente opciones, porque no la vamos a explicar en este artitulo.
+```sh
+? Setup unit tests No
+? Setup e2e tests with Nightwatch? No
+```
+
+La estructura que nos interesa es la de la carpeta `src`
+
+```text
+▾ src/
+  ▸ assets/
+  ▾ components/
+     - HelloWorld.vue
+  ▾ router/
+      - index.js
+    - App.vue
+    - main.js
+```
+
+Esta app consiste en usar [vue-router](https://router.vuejs.org/en/) nos permite cambiar entre componentes según la URL y usar esos componente como raíz de otros.
+
+Vamos a ver el archivo `index.js` dentro de la carpeta `router`.
+
+Estas lineas nos permite usar el plugin.
+```javascript
+import Router from 'vue-router';
+Vue.use(Router);
+```
+
+Importamos los componentes que serán llamados al cambiar las URL
+```javascript
+import HelloWorld from '@/components/HelloWorld';
+```
+
+Para configurar el plugin
+```javascript
+export default new Router({
+  routes: [
+    {
+      path: '/',
+      name: 'HelloWorld',
+      component: HelloWorld,
+    },
+  ],
+});
+```
+
+En el archivo `main.js`, la linea `import router from './router';` solo importa el contenido del archivo anterior y en la instancia Vue para poder usar el plugin es agregado con `router`.
+
+En el archivo `App.vue` entraremos un tag `<router-view/>` es el elemento donde se incorporan los componentes que dependen de la URL.
 
 
