@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Welcome to Vue</title>
+  <script src="https://unpkg.com/vue"></script>
+</head>
+
+<body>
+  <div id="app">
+    <hello-component></hello-component>
+  </div>
+
+  <script src='./hello-component.js'></script>
+  <template id="hello">
+    <div>
+      <h1>{{ message }}</h1>
+      <input v-model="message">
+      <button v-on:click="change('message')">change</button>
+    </div>
+  </template>
+
+  <script>
+    new Vue({
+      el: '#app'
+    })
+  </script>
+</body>
+
+</html>
