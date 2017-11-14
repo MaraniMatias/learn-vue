@@ -208,6 +208,9 @@ export default {
 </script>
 ```
 
+> Aclaración `data()` es lo mismos `data: function(){}`
+
+
 Ahora poder incorporar `<hello></hello>` dentro del div `#app`
 
 ### Agregamos un componente dentro de hello
@@ -354,7 +357,12 @@ Esta imagen muestra el concepto de Vuex
 
 * **State** Es el lugar donde esta la información a compartir con nuestro componente.
 * **Actions** Cuando un componente decide obtener información de la API despacha (dispatch) una Acción y esta consulta al backend.
-* **Mutations** Cuando la información que trae del backend o otra que deseamos percitir en el State confirmamos (commit) una mutación, la encargada de modificar el estado
+* **Mutations** Cuando la información que trae del backend o otra que deseamos percitir en el State confirmamos (commit) una mutación, la encargada de modificar el estado.
+* **Getters** Para obtener información del State.
 
 Es importante no saltear el flujo para cambiar el estado, si un componente desea cambiar la información sin consultar al backend debería pasar por actions y después por mutación.
+
+Un ejemplo útil [vuejs-shopping-cart](https://github.com/vuejs/vuex/tree/master/examples/shopping-cart)
+
+Dejo un ejemplo sencillo en `mi-app-vuex`
 
