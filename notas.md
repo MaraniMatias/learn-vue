@@ -1,16 +1,25 @@
+# Por leer o interesantes para leer
+> [leer post de oneminutejs](https://medium.com/@oneminutejs)
+> [New in vuejs 3](https://blog.cloudboost.io/reactivity-in-vue-js-2-vs-vue-js-3-dcdd0728dcdf)
+> [10 things I love about Vue](https://medium.com/@dalaidunc/10-things-i-love-about-vue-505886ddaff2)
+> [Angular 5 vs. React vs. Vue](https://itnext.io/angular-5-vs-react-vs-vue-6b976a3f9172)
+
 # General
 
+```javascript
 Vue.prototype.$http = axios
+```
 
+[vue-test-utils](https://vue-test-utils.vuejs.org/)
+[vuejs-tips cheatsheet](https://vuejs-tips.github.io/cheatsheet/)
+[simple-unit-tests-with-vue-test-utils-and-jest](https://medium.freecodecamp.org/simple-unit-tests-with-vue-test-utils-and-jest-c384d7abc321)
+[Vue Unit Test Performance Comparison](https://github.com/eddyerburgh/vue-unit-test-perf-comparison)
 
-> [leer post de oneminutejs](https://medium.com/@oneminutejs)
-> [5 Vuex Plugins For Your Next VueJS Project](https://medium.com/js-dojo/5-vuex-plugins-for-your-next-vuejs-project-df9902a70de2)
-> [10 things I love about Vue](https://medium.com/@dalaidunc/10-things-i-love-about-vue-505886ddaff2)
-> [Large-scale Vuex application structures](https://medium.com/3yourmind/large-scale-vuex-application-structures-651e44863e2f)
-> [Angular 5 vs. React vs. Vue](https://itnext.io/angular-5-vs-react-vs-vue-6b976a3f9172)
-> [New in vuejs 3](https://blog.cloudboost.io/reactivity-in-vue-js-2-vs-vue-js-3-dcdd0728dcdf)
-> [4 Things Vue.js Got Right](https://medium.com/js-dojo/4-things-vue-js-got-right-10820cc84004)
-> [vuejs-tips cheatsheet](https://vuejs-tips.github.io/cheatsheet/)
+[Share vuex mutations between tabs/windows](https://github.com/xanf/vuex-shared-mutations)
+
+[shopping-cart](https://github.com/vuejs/vuex/tree/dev/examples/shopping-cart)
+
+[cli.vuejs.org](https://cli.vuejs.org/)
 
 # Angular vs React vs Vue
 
@@ -24,7 +33,7 @@ Vue.prototype.$http = axios
 ¿Cómo se ve la curva de aprendizaje para cada marco?
 ¿Qué tipo de rendimiento puede esperar de los marcos?
 ¿Dónde puedes mirar más de cerca debajo del capó?
-¿Cómo puede comenzar a desarrollarse con el marco elegido? 
+¿Cómo puede comenzar a desarrollarse con el marco elegido?
 
 ### 1. Ciclo de vida y consideraciones estratégicas
 
@@ -39,7 +48,7 @@ http://www.timqian.com/star-history/#facebook/react&angular/angular&vuejs/vue
 
 > 1.4 Soporte y migraciones a largo plazo
 
-###  2. Comparación de React, Angular & Vue 
+###  2. Comparación de React, Angular & Vue
 
 > TypeScript agrega una gran cantidad de sobrecarga (de aprendizaje) a los proyectos
 > JsHint ESlint
@@ -60,7 +69,7 @@ Eric Clemmons tiene un artículo al respecto que dice lo siguiente:
 Vue parece ser el más limpio y liviano de los tres marcos. GitLab tiene una publicación en el blog sobre su decisión con respecto a Vue.js (octubre de 2016):
 
 """
-Vue.js viene con el equilibrio perfecto entre lo que hará por usted y lo que debe hacer usted mismo. (...) Vue.js está siempre a su alcance, una red de seguridad sólida pero flexible lista para ayudarlo a mantener su programación eficiente y su sufrimiento infligido por DOM a un mínimo. 
+Vue.js viene con el equilibrio perfecto entre lo que hará por usted y lo que debe hacer usted mismo. (...) Vue.js está siempre a su alcance, una red de seguridad sólida pero flexible lista para ayudarlo a mantener su programación eficiente y su sufrimiento infligido por DOM a un mínimo.
 """
 """
 Para mí y para mi equipo, la legibilidad del código es importante, pero sigue siendo muy importante que la escritura del código sea divertida. No es divertido crear 6 componentes cuando está implementando un widget de calculadora realmente simple. En muchos casos, también es malo en términos de mantenimiento, modificaciones o la aplicación de revisión visual a algún widget, ya que necesita saltar alrededor de múltiples archivos / funciones y verificar cada pequeño fragmento de HTML por separado. Una vez más, no sugiero escribir monolitos: sugiero usar componentes en lugar de microcomponentes para el desarrollo diario.
@@ -74,18 +83,18 @@ Reaccionar a menudo funciona incluido con Redux. Redux se describe a sí mismo e
 
 * Única fuente de verdad
 * El estado es de solo lectura
-* Los cambios se realizan con funciones puras 
+* Los cambios se realizan con funciones puras
 
-En otras palabras: el estado de la aplicación completa se almacena en un árbol de objetos dentro de una sola tienda. Esto ayuda a depurar la aplicación, y algunas funcionalidades son más fáciles de implementar. El estado es de solo lectura y solo se puede cambiar a través de acciones para evitar condiciones de carrera (también ayuda con la depuración). Los reductores se escriben para especificar cómo los estados se pueden transformar mediante acciones. 
+En otras palabras: el estado de la aplicación completa se almacena en un árbol de objetos dentro de una sola tienda. Esto ayuda a depurar la aplicación, y algunas funcionalidades son más fáciles de implementar. El estado es de solo lectura y solo se puede cambiar a través de acciones para evitar condiciones de carrera (también ayuda con la depuración). Los reductores se escriben para especificar cómo los estados se pueden transformar mediante acciones.
 
-### 2.7 Flexibilidad y reducción de tamaño a microservicios 
+### 2.7 Flexibilidad y reducción de tamaño a microservicios
 Puede trabajar con React o Vue simplemente agregando la biblioteca Javascript al código fuente. Esto no es posible con Angular debido a su uso de TypeScript.
 
 Ahora nos estamos moviendo más hacia microservicios y microapps. React y Vue le dan más control para dimensionar una aplicación seleccionando solo las cosas que realmente son necesarias. Ofrecen más flexibilidad para pasar de un SPA a microservicios utilizando partes de una aplicación anterior. El trabajo angular es mejor para SPA, ya que probablemente esté demasiado hinchado para ser utilizado en microservicios.
 
 Como señala Cory House :
 """
-JavaScript se mueve rápido, y React le permite intercambiar pequeñas partes de su aplicación por mejores bibliotecas en lugar de esperar y esperar que su marco innovará. La filosofía de herramientas pequeñas, compostables y de un solo propósito nunca pasa de moda. 
+JavaScript se mueve rápido, y React le permite intercambiar pequeñas partes de su aplicación por mejores bibliotecas en lugar de esperar y esperar que su marco innovará. La filosofía de herramientas pequeñas, compostables y de un solo propósito nunca pasa de moda.
 """
 
 ### 2.8 Tamaño y rendimiento
@@ -132,20 +141,20 @@ Cuando se trata de depuración, es una ventaja que React y Vue tengan menos magi
 - Si desea tener muchos desarrolladores en el grupo: A ngular o React
 - Si trabajas con diseñadores y necesitas archivos HTML limpios: Angular o Vue
 - Si te gusta Vue pero temes al ecosistema limitado: React
-- Si no puede decidir, primero aprenda React , luego Vue , luego Angular . 
+- Si no puede decidir, primero aprenda React , luego Vue , luego Angular .
 
 ## [Why we moved from Angular 2 to Vue.js (and why we didn’t choose React)](https://medium.com/reverdev/why-we-moved-from-angular-2-to-vue-js-and-why-we-didnt-choose-react-ef807d9f4163)
 > Leer todo, aca un resume
 
 Antes de continuar, admito que Angular 2 beta 9 es un producto diferente de Angular 2.0, pero ese fue exactamente uno de los problemas. De beta9 a 2.0.0 hay 8 versiones beta, 8 RC y la versión 2.0.0, 17 versiones para actualizar en total. Intentamos actualizar de la versión beta 9 a la 2.0.0, pero se rompieron demasiadas cosas que hicieron que la actualización no fuera trivial. Además, casi al mismo tiempo que estábamos cuestionando a Angular 2 como nuestro marco de referencia, el equipo Angular decidió comenzar a trabajar en Angular 4. Si bien prometieron que no sería demasiado drástico, eso significaba que para cuando termináramos de actualizar a Angular 2.0.0 íbamos a necesitar otra actualización. Qué pérdida de tiempo y recursos limitados.
 
-Lo principal que no nos gustó y todavía no nos gusta sobre Angular 2 es Typescript. Sé que Angular 2 se puede usar con Javascript, pero una vez más, la decisión de usar Typescript ya se tomó y, según tengo entendido, usar Javascript puro con Angular 2 no es la manera ideal en que debería usar Angular 2. En cualquier caso, deshacerse de Typescript significaba una reescritura completa del proyecto. 
+Lo principal que no nos gustó y todavía no nos gusta sobre Angular 2 es Typescript. Sé que Angular 2 se puede usar con Javascript, pero una vez más, la decisión de usar Typescript ya se tomó y, según tengo entendido, usar Javascript puro con Angular 2 no es la manera ideal en que debería usar Angular 2. En cualquier caso, deshacerse de Typescript significaba una reescritura completa del proyecto.
 
 No sentí que Typescript agregara un valor sustancial y, lo que es peor, notamos que nuestra velocidad de codificación se redujo. Con Typescript las cosas que eran realmente fáciles de hacer en Javascript, como definir un objeto simple, eran más complicadas de hacer en Typescript. Le recomiendo que lea los siguientes artículos antes de comenzar a utilizar Typescript. No es la solución correcta para todos.
 
 ### React
 
-La primera opción obvia fue reaccionar, porque bueno, todos lo están haciendo y los que no, están hablando de eso. Así que esa era una opción, sin duda sabiendo que Facebook está detrás, ayuda. Sin embargo, React en sí mismo no es un marco, es necesario agregar elementos adicionales para que brille. 
+La primera opción obvia fue reaccionar, porque bueno, todos lo están haciendo y los que no, están hablando de eso. Así que esa era una opción, sin duda sabiendo que Facebook está detrás, ayuda. Sin embargo, React en sí mismo no es un marco, es necesario agregar elementos adicionales para que brille.
 
 ### Vue
 
@@ -164,7 +173,7 @@ Primero comenzamos a definir cuáles iban a ser nuestros puntos de decisión. Sa
 * Idealmente, nos permitiría reutilizar el código
 * La prueba de velocidad de codificación debería aumentarse
 * Reactividad
-* Componente basado 
+* Componente basado
 
 Después de decidir nuestros puntos de decisión, tuve que ensuciarme las manos, así que le di a React y Vue.js un par de días cada uno para revisar cada punto de decisión que Google no iba a responder. Como no sabía nada de ninguno de ellos, al final de dos días reevalué lo lejos que llegué a reescribir algunas partes del proyecto real que íbamos a migrar.
 
@@ -174,37 +183,37 @@ Las partes que elegí reescribir fueron:
 * Dos diseños para dos páginas diferentes.
 * Reactividad para las cosas relacionadas con el usuario
 * Formularios de inicio de sesión y algunos formularios de contenido
-* Un modo de arranque 
+* Un modo de arranque
 
 Me sorprendió lo lejos que llegué con Vue.js, en un par de días tuve una prueba de concepto para mostrar al resto del equipo y a mi CTO. Obtuve una buena comprensión de los conceptos básicos de Vue.js, definí una arquitectura buena y extensible pero, lo más importante, disfruté mucho la experiencia de escribir código con ella y sentí que lo hacía más rápido que con React.
 
 React fue mucho más difícil de lo que pensaba, elegir entre Redux y MobX es más problemático que tener una opción que esté bien integrada con el framework como Vue.js y Vuex do. Esto es simple porque, al no tener experiencia con un marco, le da más confianza sabiendo que un marco tiene una biblioteca oficial para hacer algo. Por cierto, sentí que la reactividad era más fácil con Vuex que con Redux, pero probablemente sea solo una percepción, como todas las curvas de aprendizaje.
 
-JSX también era un problema ya que no podíamos reutilizar el código HTML y Vue.js nos permitió hacerlo en cierta medida. Los archivos Vue son realmente buenos para trabajar, ya que no me gustan las plantillas en línea. React mezcla tanto JSX / HTML con código JS que simplemente no me gusta, ya que creo firmemente en la separación de las preocupaciones y se ve feo en mi humilde opinión. 
+JSX también era un problema ya que no podíamos reutilizar el código HTML y Vue.js nos permitió hacerlo en cierta medida. Los archivos Vue son realmente buenos para trabajar, ya que no me gustan las plantillas en línea. React mezcla tanto JSX / HTML con código JS que simplemente no me gusta, ya que creo firmemente en la separación de las preocupaciones y se ve feo en mi humilde opinión.
 
 #### Velocidad de codificación
 
 La velocidad de codificación era un área que Vue.js había ganado por mucho, sin tener que aprender que JSX era de gran ayuda. Esta velocidad se confirmó más tarde cuando otro desarrollador se unió al proyecto y contribuyó al proyecto en cuestión de horas después de una sesión de capacitación de aproximadamente 1 hora.
 
-Esto fue extremadamente importante para nosotros y puede verlo de inmediato abriendo un archivo vue. Contiene una sección de plantilla con HTML y etiquetas que se parecen a Angular 1, por lo que si hiciste Angular 1, será muy familiar. Un archivo vue también tiene un estilo y secciones javascript puras donde realmente usas javascript y solo necesitas aprender algunas cosas sobre Vue.js para entenderlos completamente. Comprender las propiedades de Vue.js, como los métodos , los cálculos, las propiedades , los datos y las creaciones lo lleva a aproximadamente el 90% de lo que necesita comprender para comenzar a codificar, realmente fácil. 
+Esto fue extremadamente importante para nosotros y puede verlo de inmediato abriendo un archivo vue. Contiene una sección de plantilla con HTML y etiquetas que se parecen a Angular 1, por lo que si hiciste Angular 1, será muy familiar. Un archivo vue también tiene un estilo y secciones javascript puras donde realmente usas javascript y solo necesitas aprender algunas cosas sobre Vue.js para entenderlos completamente. Comprender las propiedades de Vue.js, como los métodos , los cálculos, las propiedades , los datos y las creaciones lo lleva a aproximadamente el 90% de lo que necesita comprender para comenzar a codificar, realmente fácil.
 
 #### Documentación
 
-Para tener la velocidad adecuada, necesitábamos una buena documentación y la documentación de Vue.js es excelente. Las guías, ejemplos, preguntas y API se documentan muy bien y cubren todas las dudas que encontramos durante el desarrollo. Teníamos miedo de encontrar documentación china para muchas de las preguntas que tendríamos, pero ese no era el caso, todo estaba disponible en inglés. 
+Para tener la velocidad adecuada, necesitábamos una buena documentación y la documentación de Vue.js es excelente. Las guías, ejemplos, preguntas y API se documentan muy bien y cubren todas las dudas que encontramos durante el desarrollo. Teníamos miedo de encontrar documentación china para muchas de las preguntas que tendríamos, pero ese no era el caso, todo estaba disponible en inglés.
 
 #### Preguntando
 
 Vue.js se veía realmente bien después de más de una semana de consideración, pero para mi sorpresa, preguntar era inútil, ya que nadie había usado Vue.js antes, el único comentario que recibí era del orden de "se ve bien pero no lo he visto" lo usé " . React tomó la mayor cantidad de menciones y Angular 2 llegó en un distante segundo lugar.
 
-Empecé a buscar talento local con la experiencia de Vue.js y encontré algunos que eran realmente buenos, así que comencé a pensar que no estaba solo, mi círculo de interacción social era probablemente demasiado pequeño y no debía prestar suficiente atención al hecho de que no conocía a nadie en persona trabajando con Vue.js en la producción. 
+Empecé a buscar talento local con la experiencia de Vue.js y encontré algunos que eran realmente buenos, así que comencé a pensar que no estaba solo, mi círculo de interacción social era probablemente demasiado pequeño y no debía prestar suficiente atención al hecho de que no conocía a nadie en persona trabajando con Vue.js en la producción.
 
 #### Móvil (Code en el pasado y framework que aceptan vue o react)
 
-En el momento en que estábamos pensando en Vue.js vs React, también estábamos considerando volver a escribir nuestra aplicación móvil y React Native parecía una muy buena opción. Esa fue una gran ventaja para React ya que Vue.js no tenía nada remotamente estable que se asemeje a lo que React Native está tratando de hacer, por lo que la posibilidad de reutilizar el código entre la web y los clientes de la aplicación fue una gran ventaja, pero decidí que no iba a considerar las posibilidades que podrían o no suceder. Después de todo, desde mi experiencia, con Node.js reutilizo una cantidad de código realmente insignificante entre el navegador y el servidor. 
+En el momento en que estábamos pensando en Vue.js vs React, también estábamos considerando volver a escribir nuestra aplicación móvil y React Native parecía una muy buena opción. Esa fue una gran ventaja para React ya que Vue.js no tenía nada remotamente estable que se asemeje a lo que React Native está tratando de hacer, por lo que la posibilidad de reutilizar el código entre la web y los clientes de la aplicación fue una gran ventaja, pero decidí que no iba a considerar las posibilidades que podrían o no suceder. Después de todo, desde mi experiencia, con Node.js reutilizo una cantidad de código realmente insignificante entre el navegador y el servidor.
 
 #### Ultimas palabras
 
-De las muchas páginas web que investigué antes de tomar una decisión, un gráfico llamó mi atención, la satisfacción del desarrollador en la encuesta de estado de Javascript que Sacha Greif @sachagreif hace todos los años. Lo admito, como lo hace el autor, no es una encuesta científica, pero ofrece una buena cantidad de información y esto fue confirmado más tarde por nuestros puntos de decisión cuando tuvimos una idea más clara, especialmente sobre Vue.js ya que no sabíamos nada al respecto. el comienzo de nuestra investigación. Puedes leer El estado de Javascript en el siguiente enlace. 
+De las muchas páginas web que investigué antes de tomar una decisión, un gráfico llamó mi atención, la satisfacción del desarrollador en la encuesta de estado de Javascript que Sacha Greif @sachagreif hace todos los años. Lo admito, como lo hace el autor, no es una encuesta científica, pero ofrece una buena cantidad de información y esto fue confirmado más tarde por nuestros puntos de decisión cuando tuvimos una idea más clara, especialmente sobre Vue.js ya que no sabíamos nada al respecto. el comienzo de nuestra investigación. Puedes leer El estado de Javascript en el siguiente enlace.
 
 ![Tabla con comparativas](https://cdn-images-1.medium.com/max/1600/1*-ycXrPmBs7aJTD6Wyd18Xw.png)
 
@@ -222,7 +231,27 @@ Valoramos la simplicidad y Vue.js logra eso, esta simplicidad se refleja en la c
 
 Rever ( www.reverscore.com ) es una plataforma en línea que permite a las empresas involucrar a todos sus empleados en la innovación de primera línea todos los días. Rever desmitifica la innovación y la convierte en un hábito diario para todos. Siempre estamos reclutando, si desea trabajar con un equipo de tecnología increíble, consulte nuestras oportunidades en https://reverscore.com/careers/
 
-Luis Elizondo es el Ingeniero Líder de Rever, donde hace el desarrollo Web de Backend y Frontend. También está a cargo de la automatización, infraestructura, arquitectura de sistemas y seguridad. Tiene más de 10 años de experiencia trabajando con múltiples lenguajes de programación, diseñando arquitecturas de aplicaciones, automatizando procesos y operaciones y administrando servidores en la nube. 
+Luis Elizondo es el Ingeniero Líder de Rever, donde hace el desarrollo Web de Backend y Frontend. También está a cargo de la automatización, infraestructura, arquitectura de sistemas y seguridad. Tiene más de 10 años de experiencia trabajando con múltiples lenguajes de programación, diseñando arquitecturas de aplicaciones, automatizando procesos y operaciones y administrando servidores en la nube.
 
 ## [Why 43% of Front-End Developers want to learn Vue.js](https://medium.com/vue-mastery/why-43-of-front-end-developers-want-to-learn-vue-js-7f23348bc5be)
 > leery ver, explica como hacer una page simple
+
+## [Anyway, this is how to use v-model with Vuex. Computed setter in action](https://itnext.io/anyway-this-is-how-to-use-v-model-with-vuex-computed-setter-in-action-320eb682c976)
+
+![imagen vue](https://cdn-images-1.medium.com/max/2000/1*h8v9HT2amuJPjLdh4HjqHw.png)
+
+## [Large-scale Vuex application structures](https://medium.com/3yourmind/large-scale-vuex-application-structures-651e44863e2f)
+
+Módulos en vuex
+![Módulos en vuex](https://cdn-images-1.medium.com/max/2000/1*rWbfpFXSBnKVmDjdOXxYRw.png)
+
+Estructura
+![Estructura vue y vuex](https://cdn-images-1.medium.com/max/1600/1*UtcKuaTf36yJspMKvttd5g.png)
+
+[vuex-feature-scoped-structure](https://github.com/igeligel/vuex-feature-scoped-structure)
+
+[vuex-namespaced-module-structure](https://github.com/igeligel/vuex-namespaced-module-structure)
+
+[vue-wordpress-pwa](https://github.com/bstavroulakis/vue-wordpress-pwa)
+
+
