@@ -1,12 +1,27 @@
+# Curso
+
+- Vue simple
+- Vue proyecto simple
+  - explicar webpack, babel, eslint
+- Vue componente
+- Vue padre hijo
+    - modal
+    - progress bar
+- Vue filter
+    - donde obtener componentes script
+- Vue router
+- Axion
+- Vuex
+- Test
+
 # Por leer o interesantes para leer
 > [leer post de oneminutejs](https://medium.com/@oneminutejs)
 
 > [New in vuejs 3](https://blog.cloudboost.io/reactivity-in-vue-js-2-vs-vue-js-3-dcdd0728dcdf)
-> [10 things I love about Vue](https://medium.com/@dalaidunc/10-things-i-love-about-vue-505886ddaff2)
-> [Angular 5 vs. React vs. Vue](https://itnext.io/angular-5-vs-react-vs-vue-6b976a3f9172)
 
 > [The Vue architecture that worked for me. (in small and large apps)](https://medium.com/@ederng/the-vue-architecture-that-worked-for-me-in-small-and-large-apps-9b253cf92951)
 > [Interactive Maps with Vue & Leaflet](https://travishorn.com/interactive-maps-with-vue-leaflet-5430527353c8)
+> [Building a Real-World Web App With Vue.js and Firebase](https://savvyapps.com/blog/definitive-guide-building-web-app-vuejs-firebase?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more)
 
 # General
 
@@ -280,3 +295,11 @@ Ayuda a crear las aplicaciones de iluminaci√≥n sin ninguna complejidad. El tama√
 [video](https://www.youtube.com/watch?v=2CSr2vBApSI&list=PL55RiY5tL51pT0DNJraU93FhMzhXxtDAo)
 [Videos](https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fvideoseries%3Flist%3DPL55RiY5tL51p-YU-Uw90qQH419BM4Iz07&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DnyJSd6V2DRI&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FnyJSd6V2DRI%2Fhqdefault.jpg&key=a19fcc184b9711e1b4764040d3dc5c07&type=text%2Fhtml&schema=youtube#)
 
+## [Angular 5 vs. React vs. Vue](https://itnext.io/angular-5-vs-react-vs-vue-6b976a3f9172)
+
+
+
+##[Angular vs. React vs. Vue: A 2017 comparison](https://medium.com/unicorn-supplies/angular-vs-react-vs-vue-a-2017-comparison-c5c52d620176)
+
+## [How I started loving Vue.md](https://gist.github.com/Igogrek/58046e1dda1638012299129bd0ae4ffd?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more)
+## [10 things I love about Vue](https://medium.com/@dalaidunc/10-things-i-love-about-vue-505886ddaff2)
