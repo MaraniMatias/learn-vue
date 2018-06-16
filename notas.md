@@ -1,8 +1,12 @@
 # Por leer o interesantes para leer
 > [leer post de oneminutejs](https://medium.com/@oneminutejs)
+
 > [New in vuejs 3](https://blog.cloudboost.io/reactivity-in-vue-js-2-vs-vue-js-3-dcdd0728dcdf)
 > [10 things I love about Vue](https://medium.com/@dalaidunc/10-things-i-love-about-vue-505886ddaff2)
 > [Angular 5 vs. React vs. Vue](https://itnext.io/angular-5-vs-react-vs-vue-6b976a3f9172)
+
+> [The Vue architecture that worked for me. (in small and large apps)](https://medium.com/@ederng/the-vue-architecture-that-worked-for-me-in-small-and-large-apps-9b253cf92951)
+> [Interactive Maps with Vue & Leaflet](https://travishorn.com/interactive-maps-with-vue-leaflet-5430527353c8)
 
 # General
 
@@ -10,16 +14,26 @@
 Vue.prototype.$http = axios
 ```
 
+[cli.vuejs.org](https://cli.vuejs.org/)
+
+## Test
 [vue-test-utils](https://vue-test-utils.vuejs.org/)
-[vuejs-tips cheatsheet](https://vuejs-tips.github.io/cheatsheet/)
 [simple-unit-tests-with-vue-test-utils-and-jest](https://medium.freecodecamp.org/simple-unit-tests-with-vue-test-utils-and-jest-c384d7abc321)
+[Mocking Vuex in Vue unit tests](https://medium.com/@lachlanmiller_52885/mocking-vuex-in-vue-unit-tests-b6eda1c4d301)
 [Vue Unit Test Performance Comparison](https://github.com/eddyerburgh/vue-unit-test-perf-comparison)
 
-[Share vuex mutations between tabs/windows](https://github.com/xanf/vuex-shared-mutations)
+## UI Framework
 
+[vuetifyjs](https://vuetifyjs.com/en/)
+[Keen UI](https://josephuspaye.github.io/Keen-UI)
+
+## Ejemplos
 [shopping-cart](https://github.com/vuejs/vuex/tree/dev/examples/shopping-cart)
 
-[cli.vuejs.org](https://cli.vuejs.org/)
+## Otros
+[vuejs-tips cheatsheet](https://vuejs-tips.github.io/cheatsheet/)
+[Share vuex mutations between tabs/windows](https://github.com/xanf/vuex-shared-mutations)
+[Supporting iPhone X for mobile web & Cordova app using Onsen UI](https://medium.com/the-web-tub/supporting-iphone-x-for-mobile-web-cordova-app-using-onsen-ui-f17a4c272fcd)
 
 # Angular vs React vs Vue
 
@@ -254,4 +268,15 @@ Estructura
 
 [vue-wordpress-pwa](https://github.com/bstavroulakis/vue-wordpress-pwa)
 
+
+## [Handpicked Learning Resources for VueJS](https://medium.com/gridbox/handpicked-learning-resources-for-vuejs-d49d17aba872)
+
+Recursos de aprendizaje cuidadosamente seleccionados para VueJS
+
+Vue JS es un marco liviano que se usa para desarrollar / construir las interfaces de usuario.
+Ayuda a crear las aplicaciones de iluminación sin ninguna complejidad. El tamaño del archivo de Vue JS es de 16 kb (minificado). También funciona en la capa de vista similar a React, y Vue es más fácil de usar que React y Angular.
+
+[Video](https://www.youtube.com/watch?v=nyJSd6V2DRI&list=PL55RiY5tL51p-YU-Uw90qQH419BM4Iz07)
+[video](https://www.youtube.com/watch?v=2CSr2vBApSI&list=PL55RiY5tL51pT0DNJraU93FhMzhXxtDAo)
+[Videos](https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fvideoseries%3Flist%3DPL55RiY5tL51p-YU-Uw90qQH419BM4Iz07&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DnyJSd6V2DRI&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FnyJSd6V2DRI%2Fhqdefault.jpg&key=a19fcc184b9711e1b4764040d3dc5c07&type=text%2Fhtml&schema=youtube#)
 
