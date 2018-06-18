@@ -40,9 +40,28 @@
 > [Vue Native: Build Beautiful Native Apps Using Vue.js ](https://vuejsfeed.com/blog/vue-native-build-beautiful-native-apps-using-vue-js?utm_campaign=Revue%20newsletter&utm_medium=Newsletter&utm_source=Vue.js%20Feed)
 > [UglifyJS Webpack Plugin](https://github.com/webpack-contrib/uglifyjs-webpack-plugin)
 
-# General
-- [The Vue architecture that worked for me. (in small and large apps)](https://medium.com/@ederng/the-vue-architecture-that-worked-for-me-in-small-and-large-apps-9b253cf92951)
+## Free Books
+> [20 Things I Learned About Browsers and the Web](https://medium.com/web-development-zone/top-free-ebooks-for-web-designers-web-developers-f8c6a70465ad)
+> [You Don’t Know JS (book series)](https://github.com/getify/You-Dont-Know-JS)
+> [Speaking JavaScript](http://speakingjs.com/es5/)o
 
+> [A Guide to HTML5 & CSS3](https://html5hive.org/free-ebook-a-guide-to-html5-and-css3/)
+> [Adaptive Web Design](https://adaptivewebdesign.info/1st-edition/)
+> [Eloquent JavaScript](https://medium.com/web-development-zone/top-free-ebooks-for-web-designers-web-developers-f8c6a70465ad)
+> [Learning JavaScript Design Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
+> [Programming JavaScript Applications](http://chimera.labs.oreilly.com/books/1234000000262/index.html)
+> [The Guide to Usability Testing (PDF)](https://www.uxpin.com/studio/ebooks/guide-to-usability-testing/)
+> [Web UI Best Practices (PDF)](https://speckyboy.com/free-e-book-web-ui-best-practices/)
+> [The Guide to UX Design Process & Documentation (PDF)](https://speckyboy.com/guide-ux-design-process-documentation/)
+> [The Guide to Mockups (PDF)](https://speckyboy.com/free-ebook-guide-mockups/)
+
+# General
+
+## [The Vue architecture that worked for me. (in small and large apps)](https://medium.com/@ederng/the-vue-architecture-that-worked-for-me-in-small-and-large-apps-9b253cf92951)
+
+
+
+## Más tips
 > Si quires incorporar Vue componentes en AngularJs [ngVue](https://github.com/ngVue/ngVue)
 [cli.vuejs.org](https://cli.vuejs.org/)
 
@@ -403,6 +422,38 @@ Desarrolladores usan mas data() en lugar de Vuex, a medida que resaca el código
 
 ### 1. Sintaxis mínima de plantilla
 
+```vue
+<template>
+  <div>
+    <h1>{{ message }}</h1>
+    <input v-model="message">
+    <button v-on:click="change('message')">change</button>
+  </div>
+</template>
+
+<script>
+export default {
+  data: function () {
+    return {
+      message: 'Welcome to your Vue.js app!'
+    };
+  },
+  methods: {
+    change: function (value) {
+      this.message = "new " + value;
+    }
+  }
+}
+</script>
+
+<style scoped>
+h1 {
+  font-style: italic;
+  color: blue;
+}
+</style>
+
+```
 ```vue
 <template>
   <div id="app">
