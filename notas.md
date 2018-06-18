@@ -6,6 +6,7 @@
   - explicar webpack, ES6 , babel, eslint, nodejs
   - archivos importantes :D, de la estructura
 - Vue componente
+  - [Computed vs Watched Property](https://vuejs.org/v2/guide/computed.html#Computed-vs-Watched-Property)
 - Vue padre hijo
     - modal
     - progress bar
@@ -18,6 +19,7 @@
 - Cargar listas a demanda
 
 # Por leer o interesantes para leer
+> [The Cookbook vs the Guide](https://vuejs.org/v2/cookbook/#The-Cookbook-vs-the-Guide)
 > [leer post de oneminutejs](https://medium.com/@oneminutejs)
 
 > [New in vuejs 3](https://blog.cloudboost.io/reactivity-in-vue-js-2-vs-vue-js-3-dcdd0728dcdf)
@@ -34,39 +36,79 @@
 
 # General
 
+> Si quires incorporar Vue componentes en AngularJs [ngVue](https://github.com/ngVue/ngVue)
 ```javascript
 Vue.prototype.$http = axios
 ```
 
 [cli.vuejs.org](https://cli.vuejs.org/)
 
+```javascript
+// Para test
+global.localStorage = localStorageMock;
+```
+- [Form Validation](https://vuejs.org/v2/cookbook/form-validation.html)
+
 ## Test
-[vue-test-utils](https://vue-test-utils.vuejs.org/)
-[simple-unit-tests-with-vue-test-utils-and-jest](https://medium.freecodecamp.org/simple-unit-tests-with-vue-test-utils-and-jest-c384d7abc321)
-[Mocking Vuex in Vue unit tests](https://medium.com/@lachlanmiller_52885/mocking-vuex-in-vue-unit-tests-b6eda1c4d301)
-[Vue Unit Test Performance Comparison](https://github.com/eddyerburgh/vue-unit-test-perf-comparison)
+- [Unit Testing Vue Components](https://vuejs.org/v2/cookbook/unit-testing-vue-components.html)
+- [vue-test-utils](https://vue-test-utils.vuejs.org/)
+- [simple-unit-tests-with-vue-test-utils-and-jest](https://medium.freecodecamp.org/simple-unit-tests-with-vue-test-utils-and-jest-c384d7abc321)
+- [Mocking Vuex in Vue unit tests](https://medium.com/@lachlanmiller_52885/mocking-vuex-in-vue-unit-tests-b6eda1c4d301)
+- [Vue Unit Test Performance Comparison](https://github.com/eddyerburgh/vue-unit-test-perf-comparison)
 
-## UI Framework, Componet o Vue Scritp
+### [Nightwatch and e2e](https://gist.github.com/Igogrek/58046e1dda1638012299129bd0ae4ffd#nightwatch-and-e2e)
+Limpiar las URL, evita problemas en linux
 
-[vuetifyjs](https://vuetifyjs.com/en/)
-[Keen UI](https://josephuspaye.github.io/Keen-UI)
-[onsen.io](https://onsen.io/vue/)
+```Javascript
+.url('data:,')
+.url(client.globals.devServerURL + `/#/my-hashed-url`)
+```
 
-[Vue2Leaflet](https://github.com/KoRiGaN/Vue2Leaflet)
+## UI Framework Plugin
+
+> [Awesome Vue.js](https://github.com/vuejs/awesome-vue)
+> [vuescript](http://www.vuescript.com/)
+
+UI Framework
+- [vuetifyjs](https://vuetifyjs.com/en/)
+- [Keen UI](https://josephuspaye.github.io/Keen-UI)
+- [vuematerial.io](https://vuematerial.io)
+- [element.eleme.io](http://element.eleme.io)
+- [elemental-ui.com](http://elemental-ui.com/)
+- [bulma.io](https://bulma.io/) con [bulma + vue = buefy](buefy.github.io)
+- [Bootstrap + Vue]()https://bootstrap-vue.js.org/
+- [Fish-UI](https://github.com/myliang/fish-ui)
+
+Mobile Framework
+- [quasar](https://quasar-framework.org)
+- [onsen.io](https://onsen.io/vue/)
+
+Plugin
+- [Vue2Leaflet](https://github.com/KoRiGaN/Vue2Leaflet)
+- [vuelidate](https://github.com/monterail/vuelidate) :D
+- [vee-validate](https://github.com/baianat/vee-validate)
 
 ## Ejemplos
-[shopping-cart](https://github.com/vuejs/vuex/tree/dev/examples/shopping-cart)
+- [shopping-cart](https://github.com/vuejs/vuex/tree/dev/examples/shopping-cart)
 
 ## Otros
-[vuejs-tips cheatsheet](https://vuejs-tips.github.io/cheatsheet/)
-[Share vuex mutations between tabs/windows](https://github.com/xanf/vuex-shared-mutations)
-[Supporting iPhone X for mobile web & Cordova app using Onsen UI](https://medium.com/the-web-tub/supporting-iphone-x-for-mobile-web-cordova-app-using-onsen-ui-f17a4c272fcd)
+- [vuejs-tips cheatsheet](https://vuejs-tips.github.io/cheatsheet/)
+- [Vue.js Component Style Guide](https://github.com/pablohpsilva/vuejs-component-style-guide)
+- [intro-to-vue](https://github.com/sdras/intro-to-vue)
 
-[Video](https://www.youtube.com/watch?v=nyJSd6V2DRI&list=PL55RiY5tL51p-YU-Uw90qQH419BM4Iz07)
-[video](https://www.youtube.com/watch?v=2CSr2vBApSI&list=PL55RiY5tL51pT0DNJraU93FhMzhXxtDAo)
-[Videos](https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fvideoseries%3Flist%3DPL55RiY5tL51p-YU-Uw90qQH419BM4Iz07&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DnyJSd6V2DRI&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FnyJSd6V2DRI%2Fhqdefault.jpg&key=a19fcc184b9711e1b4764040d3dc5c07&type=text%2Fhtml&schema=youtube#)
+- [Video](https://www.youtube.com/watch?v=nyJSd6V2DRI&list=PL55RiY5tL51p-YU-Uw90qQH419BM4Iz07)
+- [video](https://www.youtube.com/watch?v=2CSr2vBApSI&list=PL55RiY5tL51pT0DNJraU93FhMzhXxtDAo)
+- [Videos](https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fvideoseries%3Flist%3DPL55RiY5tL51p-YU-Uw90qQH419BM4Iz07&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DnyJSd6V2DRI&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FnyJSd6V2DRI%2Fhqdefault.jpg&key=a19fcc184b9711e1b4764040d3dc5c07&type=text%2Fhtml&schema=youtube#)
 
-[intro-to-vue](https://github.com/sdras/intro-to-vue)
+- [Share vuex mutations between tabs/windows](https://github.com/xanf/vuex-shared-mutations)
+- [Supporting iPhone X for mobile web & Cordova app using Onsen UI](https://medium.com/the-web-tub/supporting-iphone-x-for-mobile-web-cordova-app-using-onsen-ui-f17a4c272fcd)
+
+# [Vue.js Component Style Guide](https://github.com/pablohpsilva/vuejs-component-style-guide)
+
+Lo mas importante `MyComponet.vue`, poder usar `<Mycomponte/>`.
+
+Usar propiedades computadas en lugar de hacer cálculos en {{}} y estas propiedades ser minimalists
+(test, legibilidad).
 
 # Angular vs React vs Vue
 
@@ -314,5 +356,27 @@ Ayuda a crear las aplicaciones de iluminación sin ninguna complejidad. El tama�
 
 > [Test preforman](https://www.stefankrause.net/js-frameworks-benchmark6/webdriver-ts-results/table.html)
 
-## [How I started loving Vue.md](https://gist.github.com/Igogrek/58046e1dda1638012299129bd0ae4ffd?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more)
+## [How I started loving Vue.md](https://gist.github.com/Igogrek/58046e1dda1638012299129bd0ae4ffd) y [How I stopped loving Angular](https://medium.com/@igogrek/how-i-stopped-loving-angular-c2935f7378c4)
+
+### Resumen corto
+
+Aquí está el resumen de mi artículo anterior. Lista breve de los principales problemas angulares para mí:
+
+     Enrutador horrible
+     Inyección de Dependencia pesada y no tan útil (ver a continuación)
+     Sistemas de módulos muy discutibles (no utilizados en ningún otro marco)
+     Muchas abstracciones innecesarias, diseño API extraño
+     Observable como núcleo del marco
+
+### [Why not React](https://gist.github.com/Igogrek/58046e1dda1638012299129bd0ae4ffd#why-not-react)
+
+### [Differences and impressions after Angular](https://gist.github.com/Igogrek/58046e1dda1638012299129bd0ae4ffd#differences-and-impressions-after-angular)
+
+### Real life experience and problems
+
+Muchos desarrolladores no conocen la diferencia entre las propiedades watch y computed.
+
+Desarrolladores usan mas data() en lugar de Vuex, a medida que resaca el código hay que pasarlo.
+
+## [angular-vs-vue-vs-react-best-javascript-framework-in-2018/](https://www.azilen.com/blog/angular-vs-vue-vs-react-best-javascript-framework-in-2018/)
 ## [10 things I love about Vue](https://medium.com/@dalaidunc/10-things-i-love-about-vue-505886ddaff2)
