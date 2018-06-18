@@ -59,7 +59,82 @@
 
 ## [The Vue architecture that worked for me. (in small and large apps)](https://medium.com/@ederng/the-vue-architecture-that-worked-for-me-in-small-and-large-apps-9b253cf92951)
 
+### 1.- Componentes
 
+#### 1.1.- Hacer un componente, no un cuchillo suizo:
+
+Un componente no debe comunicarse directamente con la tienda ni realizar llamadas a la API.
+> Si lo agregamos a nuestro componente, se vuelve muy indestructible.
+El objetivo de los componentes es reutilizarlos.
+
+Algunas de las reglas
+
+* Deben tener una única responsabilidad.
+* No interactuar con la API directamente.
+* Estar preparado para aceptar datos de un padre.
+* No deberían interactuar directamente con el "exterior". La única forma de hacer esto es con eventos.
+* Deben ser independientes.
+* Deben ser reutilizables.
+* Deben poder diseñarse desde el "exterior".
+* Deben tener solo la lógica necesaria.
+
+#### 1.2.- La regla de oro:
+
+Padre edita prop del hijo y hijo emite eventos al padre.
+
+#### 1.4.- No todo es un componente
+Deberíamos evitar crear un componente muy pequeño. Esto es para evitar la sobrecarga de componentes / dependencias en nuestro proyecto.
+
+#### 1.5. ¿Comunicación entre componentes?
+Vue no nos permite comunicarnos entre componentes anidados (sin hacer un infierno de devolución de llamada) los que están en páginas diferentes. Hay muchos enfoques diferentes para hacer esto, [he aquí un ejemplo](https://www.npmjs.com/package/vue-bus)
+### 2.- Página como modelos
+
+Vue usa el patrón MVVM, por lo que una página puede funcionar como el modelo (VM). Este es el proveedor de datos para nuestros componentes. Aquí es donde tenemos las llamadas a la tienda (captadores, acciones, etc.). También puede diseñar los componentes desde aquí (en algunos casos)
+
+### 3.- Código modular (divide y conquista, aunque real).
+
+Los módulos son piezas de código reutilizable que pueden implementarse donde y cuando lo deseemos. Hacer un módulo en JS es fácil, y debe seguir muchas de las reglas de los componentes debido a que los vamos a reutilizar.
+
+- 3.1.- Cuándo crear un módulo
+Si se ve repitiendo una configuración o un código en diferentes lugares, debe crear un módulo para ello.
+
+### 4.- Tienda
+
+- 4.1.- ¿Qué debemos tener en cuenta cuando hacemos la Tienda?
+
+* Única fuente de verdad
+* Los datos son de solo lectura
+* Divida la tienda por página
+
+- 4.2.- Única fuente de verdad
+
+Los datos de la aplicación (el usuario es administrador, el usuario está conectado, etc.). Debe estar en un solo lugar (la tienda). Las páginas solo deben leer desde aquí y no deben tener su propia copia para evitar problemas a lo largo de la aplicación.
+
+- 4.3.- Los datos son de solo lectura
+
+Las páginas no pueden mutar el estado directamente. Si necesita mutarlo, es a través de una acción.
+
+- 4.4.- ¿Qué entra en la tienda?
+
+* Los datos de la vista actual
+* El estado de la vista actual
+* El concepto "es" (¿está cargando ?, ¿está listo ?, ¿es actual ?, etc.)
+* Datos compartidos
+
+### 5.- Estilos para la aplicación (componentes y diseños)
+
+- 5.1.- Diseño de componentes "internos"
+Por interno quiero decir, que no son de código abierto, los tiene en su carpeta 'componentes' o son internos de la compañía.
+
+En este caso, podemos hacer que nuestro componente tenga un estilo base, pero debería poder aceptar estilos desde el exterior.
+
+- 5.2.- Componentes de estilo que serán de código abierto.
+Estos componentes deben tener el estilo mínimo posible y todo debe ser elástico desde el exterior
+
+- 5.3.- Estilos globales
+Deberíamos tener un archivo css global. Llamo a este tema, aquí es donde vamos a definir las fuentes, el tamaño de letra, etc. Pero también algunos estilos de componentes.
+> Por ejemplo, si tenemos un componente con el mismo estilo a lo largo de nuestra aplicación, esos estilos deben estar en el tema, con esto evitamos la sobre escritura de css.
+El CSS base debe estar aquí y los estilos que van a estar en la aplicación.
 
 ## Más tips
 > Si quires incorporar Vue componentes en AngularJs [ngVue](https://github.com/ngVue/ngVue)
