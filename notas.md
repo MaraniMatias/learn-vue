@@ -182,7 +182,12 @@ El CSS base debe estar aquí y los estilos que van a estar en la aplicación.
 // Poder usar this.$http
 Vue.prototype.$http = axios
 ```
-
+```css
+/* Para evitar ver {{}} */
+ng-cloak {
+  display: none !important;
+}
+```
 ```javascript
 // Para test
 global.localStorage = localStorageMock;
