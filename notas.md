@@ -28,33 +28,41 @@
 > - [A deep dive in the Vue.js source code (#40): _directInactive](https://medium.com/@oneminutejs/a-deep-dive-in-the-vue-js-source-code-40-directinactive-3ea359cba427)
 > - [A deep dive in the Vue.js source code (#37): $refs](https://medium.com/@oneminutejs/a-deep-dive-in-the-vue-js-source-code-37-refs-bd070cdd778d)
 
-> [The Vue architecture that worked for me. (in small and large apps)](https://medium.com/@ederng/the-vue-architecture-that-worked-for-me-in-small-and-large-apps-9b253cf92951)
-> [Interactive Maps with Vue & Leaflet](https://travishorn.com/interactive-maps-with-vue-leaflet-5430527353c8)
+> [From VanillaJS to Vue.js: A refactoring tale](https://hackernoon.com/from-vanillajs-to-vue-js-a-refactoring-tale-846bee20ba3d)
 > [Building a Real-World Web App With Vue.js and Firebase](https://savvyapps.com/blog/definitive-guide-building-web-app-vuejs-firebase?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more)
 > [How To Build Vue Components Like A Pro 😎](https://blog.bitsrc.io/how-to-build-vue-components-like-a-pro-fd89fd4d524d)
-> [Vue Native: Build Beautiful Native Apps Using Vue.js ](https://vuejsfeed.com/blog/vue-native-build-beautiful-native-apps-using-vue-js?utm_campaign=Revue%20newsletter&utm_medium=Newsletter&utm_source=Vue.js%20Feed)
 > [Why VueX Is The Perfect Interface Between Frontend and API](https://codeburst.io/why-vuex-is-the-perfect-interface-between-frontend-and-api-271d92161709)
-> [From VanillaJS to Vue.js: A refactoring tale](https://hackernoon.com/from-vanillajs-to-vue-js-a-refactoring-tale-846bee20ba3d)
 > [Understanding environments in VueJS](https://medium.com/@florenceokosun/understanding-environments-in-vuejs-74e94a139b8b)
-> [Unlock performance tracing in Vue](https://medium.com/@brockreece/unlock-performance-tracing-in-vue-3b2c8f619cdc)
 > [How to build SPAs with Vue.js](https://levelup.gitconnected.com/how-to-build-spa-with-vue-js-1048d0cc6b51)
 
+> [Interactive Maps with Vue & Leaflet](https://travishorn.com/interactive-maps-with-vue-leaflet-5430527353c8)
 > [How to setup a Cordova App using Vue.js](https://medium.com/@valeriocapogna/how-to-setup-a-cordova-app-using-vue-js-8ba1315b9666)
+> [Vue Native: Build Beautiful Native Apps Using Vue.js ](https://vuejsfeed.com/blog/vue-native-build-beautiful-native-apps-using-vue-js?utm_campaign=Revue%20newsletter&utm_medium=Newsletter&utm_source=Vue.js%20Feed)
 > [UglifyJS Webpack Plugin](https://github.com/webpack-contrib/uglifyjs-webpack-plugin)
+
 # General
+- [The Vue architecture that worked for me. (in small and large apps)](https://medium.com/@ederng/the-vue-architecture-that-worked-for-me-in-small-and-large-apps-9b253cf92951)
 
 > Si quires incorporar Vue componentes en AngularJs [ngVue](https://github.com/ngVue/ngVue)
+[cli.vuejs.org](https://cli.vuejs.org/)
+
+[Axios](https://github.com/axios/axios)
 ```javascript
+// Poder usar this.$http
 Vue.prototype.$http = axios
 ```
-
-[cli.vuejs.org](https://cli.vuejs.org/)
 
 ```javascript
 // Para test
 global.localStorage = localStorageMock;
 ```
-- [Form Validation](https://vuejs.org/v2/cookbook/form-validation.html)
+[Form Validation](https://vuejs.org/v2/cookbook/form-validation.html)
+
+[Unlock performance tracing in Vue](https://medium.com/@brockreece/unlock-performance-tracing-in-vue-3b2c8f619cdc)
+```javascript
+// Para medir rendimiento
+Vue.config.performance = true
+```
 
 ## Test
 - [Unit Testing Vue Components](https://vuejs.org/v2/cookbook/unit-testing-vue-components.html)
