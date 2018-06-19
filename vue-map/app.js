@@ -223,6 +223,12 @@ var vm = new Vue({
             ],
           },
         ],
+      },
+      {
+        id: 2,
+        name: 'Agregados resistemente',
+        active: false,
+        features: []
       }
     ],
   },
@@ -275,14 +281,15 @@ var vm = new Vue({
 
     },
     addPlace() {
-      this.layers[0].features.push({
-        id: this.layers[0].features.length ,
+      this.layerChanged(2, false);
+      this.layers[2].features.push({
+        id: this.layers[2].features.length ,
         name: 'Nuevo restaurante',
         type: 'marker',
         coords: [this.locationSelect.lat, this.locationSelect.lng],
       });
       this.initLayers();
-      this.layerChanged(0, true);
+      this.layerChanged(2, true);
     }
   },
 });
