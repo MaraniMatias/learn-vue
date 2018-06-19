@@ -5,13 +5,14 @@
   <title>Interactive Map</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet"
-  href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css">
-  <link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
   <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+  <!--
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.js"></script>
+    -->
 </head>
 
 <body>
@@ -29,9 +30,17 @@
             v-model="layer.active"
             @change="layerChanged(layer.id, layer.active)"
           />
-          {{ layer.name }}
-        </label>
+            {{ layer.name }}
+          </label>
         </div>
+        <div class="row">
+          <div class="col-12">
+            <pre>{{ locationSelect }}</pre>
+            <button @click="addPlace()">Add place</button>
+            <p>{{ layers[0].features.length }}</p>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>

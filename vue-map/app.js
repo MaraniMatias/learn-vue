@@ -1,8 +1,13 @@
-new Vue({
+Vue.config.productionTip = true;
+var vm = new Vue({
   el: '#app',
   data: {
     map: null,
     tileLayer: null,
+    locationSelect: {
+      lat: 0,
+      lng: 0
+    },
     layers: [
       {
         id: 0,
@@ -263,6 +268,21 @@ new Vue({
       );
 
       this.tileLayer.addTo(this.map);
+
+      this.map.on('click', function (e) {
+        vm.$data.locationSelect =  e.latlng;
+      });
+
     },
+    addPlace() {
+      this.layers[0].features.push({
+        id: this.layers[0].features.length ,
+        name: 'Nuevo restaurante',
+        type: 'marker',
+        coords: [this.locationSelect.lat, this.locationSelect.lng],
+      });
+      this.initLayers();
+      this.layerChanged(0, true);
+    }
   },
 });
