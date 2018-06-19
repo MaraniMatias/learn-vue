@@ -20,6 +20,9 @@
 - Cargar listas a demanda
 
 # Por leer o interesantes para leer
+> [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+> [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+
 > [The Cookbook vs the Guide](https://vuejs.org/v2/cookbook/#The-Cookbook-vs-the-Guide)
 > [New in vuejs 3](https://blog.cloudboost.io/reactivity-in-vue-js-2-vs-vue-js-3-dcdd0728dcdf)
 > [leer post de oneminutejs](https://medium.com/@oneminutejs)
@@ -71,16 +74,19 @@
 > [Why VueX Is The Perfect Interface Between Frontend and API](https://codeburst.io/why-vuex-is-the-perfect-interface-between-frontend-and-api-271d92161709)
 > [Understanding environments in VueJS](https://medium.com/@florenceokosun/understanding-environments-in-vuejs-74e94a139b8b)
 > [How to build SPAs with Vue.js](https://levelup.gitconnected.com/how-to-build-spa-with-vue-js-1048d0cc6b51)
+> [How To Build Vue Components That Play Nice](https://vuejsdevelopers.com/2018/06/18/vue-components-play-nicely/?jsdojo_id=revue_cpn&utm_campaign=Revue%20newsletter&utm_medium=Newsletter&utm_source=Vue.js%20Developers)
 
 > [Interactive Maps with Vue & Leaflet](https://travishorn.com/interactive-maps-with-vue-leaflet-5430527353c8)
 > [How to setup a Cordova App using Vue.js](https://medium.com/@valeriocapogna/how-to-setup-a-cordova-app-using-vue-js-8ba1315b9666)
 > [Vue Native: Build Beautiful Native Apps Using Vue.js ](https://vuejsfeed.com/blog/vue-native-build-beautiful-native-apps-using-vue-js?utm_campaign=Revue%20newsletter&utm_medium=Newsletter&utm_source=Vue.js%20Feed)
+> [Introducing Vue Native](https://blog.geekyants.com/introducing-vue-native-b66f71d50438)
 > [UglifyJS Webpack Plugin](https://github.com/webpack-contrib/uglifyjs-webpack-plugin)
+> [How you can do continuous delivery with Vue, Docker, and Azure](https://medium.freecodecamp.org/how-you-can-do-continuous-delivery-with-vue-docker-and-azure-2f1e31fff832)
 
 ## Free Books
 > [20 Things I Learned About Browsers and the Web](https://medium.com/web-development-zone/top-free-ebooks-for-web-designers-web-developers-f8c6a70465ad)
 > [You Don’t Know JS (book series)](https://github.com/getify/You-Dont-Know-JS)
-> [Speaking JavaScript](http://speakingjs.com/es5/)o
+> [Speaking JavaScript](http://speakingjs.com/es5/)
 
 > [A Guide to HTML5 & CSS3](https://html5hive.org/free-ebook-a-guide-to-html5-and-css3/)
 > [Adaptive Web Design](https://adaptivewebdesign.info/1st-edition/)
@@ -201,9 +207,10 @@ Vue.config.performance = true
 ```
 
 ## Test
+- [Jest](https://facebook.github.io/jest/en/) jest --coverage
+- [simple-unit-tests-with-vue-test-utils-and-jest](https://medium.freecodecamp.org/simple-unit-tests-with-vue-test-utils-and-jest-c384d7abc321)
 - [Unit Testing Vue Components](https://vuejs.org/v2/cookbook/unit-testing-vue-components.html)
 - [vue-test-utils](https://vue-test-utils.vuejs.org/)
-- [simple-unit-tests-with-vue-test-utils-and-jest](https://medium.freecodecamp.org/simple-unit-tests-with-vue-test-utils-and-jest-c384d7abc321)
 - [Mocking Vuex in Vue unit tests](https://medium.com/@lachlanmiller_52885/mocking-vuex-in-vue-unit-tests-b6eda1c4d301)
 - [Vue Unit Test Performance Comparison](https://github.com/eddyerburgh/vue-unit-test-perf-comparison)
 
@@ -219,6 +226,7 @@ Limpiar las URL, evita problemas en linux
 
 > [Awesome Vue.js](https://github.com/vuejs/awesome-vue)
 > [vuescript](http://www.vuescript.com/)
+> [vuejsdevelopers.com](https://vuejsdevelopers.com/)
 
 UI Framework
 - [vuetifyjs](https://vuetifyjs.com/en/)
@@ -621,4 +629,145 @@ ul {
 ###  2. Componentes de un solo archivo
 
 Fácil de leer, Fácil de editar y si es largo es probable que es hora que dividir
+
+## [Progressively migrating from AngularJS to Vue.js at Unbabel](https://medium.com/unbabel-dev/progressively-migrating-from-angularjs-to-vue-js-at-unbabel-581eb4ae022d)
+
+> También se podría usar [ngVue](https://github.com/ngVue/ngVue)
+
+### 1 - Pasos de bebé
+
+Podes comenzando integrando
+```html
+<script src="https://unpkg.com/vue"></script>
+```
+
+Componente sidebar, escrito en el mismo HTML y JavaScript.
+La comunicación la podemos hacer con jQuery.
+```html
+<div id="sidebar">
+  Welcome to {{ name }}
+</div>
+```
+```javascript
+// Pude ser dentro de un controlador AngularJS
+const data = {
+  version: 2,
+};
+jQuery(document).trigger('updateSidebarData', [data]);
+
+// Vue
+const Sidebar = new Vue({
+  el: '#sidebar',
+  data() {
+    return {
+      dataFromMain: {
+        version: 1,
+      },
+    };
+  },
+  methods: {
+    handleUpdateSidebarData(e, data) {
+      this.dataFromMain = data;
+    },
+  },
+  mounted() {
+    jQuery(document).on('updateSidebarData', this.handleUpdateSidebarData);
+  },
+});
+```
+
+Dentro de un controlador AnguarJs
+
+```javascript
+function SampleAngularController($scope, $element) {
+  // Create mounting point
+  const MountingPoint = document.createElement('div');
+
+  // Place mounting point in target location
+  $element.appendChild(MountingPoint);
+
+  // Create Vue component
+  const ComponentVM = new Component({
+    propsData: {
+      message: $scope.selectedMessage, // Variable from Angular $scope
+    },
+  });
+
+  // Mount component to mounting point
+  ComponentVM.$mount(MountingPoint);
+}
+
+// No se olvide de llamar a $destroy() en ComponentVM
+// cuando ya no sea necesario para limpiar sus conexiones con otros vms existentes,
+// desvincular todas sus directivas y apagar todos los detectores de eventos.
+```
+
+Si estamos en un paso más avanzado componentes en archivos vue
+```javascript
+// Import jQuery to be used on this file
+import jQuery from 'jquery';
+
+// Expose jQuery to window to be used by
+// other external scripts such as your Angular application
+window.jQuery = jQuery;
+```
+
+### Test Jest
+
+Para poder usar @
+```javascript
+// jest.config.js
+module.exports = {
+  rootDir: './webapp',
+  moduleFileExtensions: ['vue', 'js', 'json', 'jsx', 'node'],
+  moduleNameMapper: {
+    '^@/(.*)$': '<rootDir>src/$1',
+  },
+  mapCoverage: true,
+};
+// npm install --save-dev babel-jest jest-vue
+module.exports = {
+  rootDir: './webapp',
+  moduleFileExtensions: ['vue', 'js', 'json', 'jsx', 'node'],
+  moduleNameMapper: {
+    '^@/(.*)$': '<rootDir>src/$1',
+  },
+  mapCoverage: true,
+  transform: {
+    '^.+\\.jsx?$': 'babel-jest',
+    '^.*\\.(vue)$': 'jest-vue',
+  },
+  mapCoverage: true,
+};
+```
+### Mocking dependencies
+
+```javascript
+export default {
+  fetchData() {
+    return fetch('/application-data/');
+      .then(function() {
+        return response.json();
+      });
+  },
+};
+
+export default {
+  fetchData() {
+    return Promise.then({
+      message: 'This is a static value',
+    });
+  },
+};
+```
+Archivo para establecer una mocks para la importación de la API en componentes reales al correr el
+test
+```javascript
+// setup-mocks.js
+jest.mock('@/Api', () => require('@/ApiMock'));
+// jest.config.js
+  setupFiles: [
+  '<rootDir> /src/tests/setup-mocks.js',
+  ],
+```
 
