@@ -192,7 +192,7 @@ Vue.prototype.$http = axios
 ```css
 /* Para evitar ver {{}} */
 ng-cloak {
-display: none !important;
+  display: none !important;
 }
 ```
 ```javascript
@@ -200,18 +200,18 @@ display: none !important;
 // el parámetro de la URL no cambie el contenido.
 // Para solucionar este puto usarmos un watch
 watch: {
-'$route'() {
-this.getPost(this.id);
-}
+  '$route'() {
+    this.getPost(this.id);
+  }
 }
 ```
 ```javascript
 // Usar variables de entorno
 // http-server
 data () {
-return {
-BASE_URL: process.env.BASE_URL
-}
+  return {
+    BASE_URL: process.env.BASE_URL
+  }
 }
 ```
 ```javascript
@@ -445,9 +445,9 @@ Primero comenzamos a definir cuáles iban a ser nuestros puntos de decisión. Sa
 * Reactividad
 * Componente basado
 
-    Después de decidir nuestros puntos de decisión, tuve que ensuciarme las manos, así que le di a React y Vue.js un par de días cada uno para revisar cada punto de decisión que Google no iba a responder. Como no sabía nada de ninguno de ellos, al final de dos días reevalué lo lejos que llegué a reescribir algunas partes del proyecto real que íbamos a migrar.
+Después de decidir nuestros puntos de decisión, tuve que ensuciarme las manos, así que le di a React y Vue.js un par de días cada uno para revisar cada punto de decisión que Google no iba a responder. Como no sabía nada de ninguno de ellos, al final de dos días reevalué lo lejos que llegué a reescribir algunas partes del proyecto real que íbamos a migrar.
 
-    Las partes que elegí reescribir fueron:
+Las partes que elegí reescribir fueron:
 
 * Algunas llamadas básicas de API
 * Dos diseños para dos páginas diferentes.
@@ -455,11 +455,11 @@ Primero comenzamos a definir cuáles iban a ser nuestros puntos de decisión. Sa
 * Formularios de inicio de sesión y algunos formularios de contenido
 * Un modo de arranque
 
-    Me sorprendió lo lejos que llegué con Vue.js, en un par de días tuve una prueba de concepto para mostrar al resto del equipo y a mi CTO. Obtuve una buena comprensión de los conceptos básicos de Vue.js, definí una arquitectura buena y extensible pero, lo más importante, disfruté mucho la experiencia de escribir código con ella y sentí que lo hacía más rápido que con React.
+Me sorprendió lo lejos que llegué con Vue.js, en un par de días tuve una prueba de concepto para mostrar al resto del equipo y a mi CTO. Obtuve una buena comprensión de los conceptos básicos de Vue.js, definí una arquitectura buena y extensible pero, lo más importante, disfruté mucho la experiencia de escribir código con ella y sentí que lo hacía más rápido que con React.
 
-    React fue mucho más difícil de lo que pensaba, elegir entre Redux y MobX es más problemático que tener una opción que esté bien integrada con el framework como Vue.js y Vuex do. Esto es simple porque, al no tener experiencia con un marco, le da más confianza sabiendo que un marco tiene una biblioteca oficial para hacer algo. Por cierto, sentí que la reactividad era más fácil con Vuex que con Redux, pero probablemente sea solo una percepción, como todas las curvas de aprendizaje.
+React fue mucho más difícil de lo que pensaba, elegir entre Redux y MobX es más problemático que tener una opción que esté bien integrada con el framework como Vue.js y Vuex do. Esto es simple porque, al no tener experiencia con un marco, le da más confianza sabiendo que un marco tiene una biblioteca oficial para hacer algo. Por cierto, sentí que la reactividad era más fácil con Vuex que con Redux, pero probablemente sea solo una percepción, como todas las curvas de aprendizaje.
 
-    JSX también era un problema ya que no podíamos reutilizar el código HTML y Vue.js nos permitió hacerlo en cierta medida. Los archivos Vue son realmente buenos para trabajar, ya que no me gustan las plantillas en línea. React mezcla tanto JSX / HTML con código JS que simplemente no me gusta, ya que creo firmemente en la separación de las preocupaciones y se ve feo en mi humilde opinión.
+JSX también era un problema ya que no podíamos reutilizar el código HTML y Vue.js nos permitió hacerlo en cierta medida. Los archivos Vue son realmente buenos para trabajar, ya que no me gustan las plantillas en línea. React mezcla tanto JSX / HTML con código JS que simplemente no me gusta, ya que creo firmemente en la separación de las preocupaciones y se ve feo en mi humilde opinión.
 
 #### Velocidad de codificación
 
@@ -568,79 +568,79 @@ Desarrolladores usan mas data() en lugar de Vuex, a medida que resaca el código
 
 ```vue
 <template>
-<div>
-<h1>{{ message }}</h1>
-<input v-model="message">
-<button v-on:click="change('message')">change</button>
-</div>
+  <div>
+    <h1>{{ message }}</h1>
+    <input v-model="message">
+    <button v-on:click="change('message')">change</button>
+  </div>
 </template>
 
 <script>
 export default {
-data: function () {
-return {
-message: 'Welcome to your Vue.js app!'
-};
-},
-methods: {
-change: function (value) {
-this.message = "new " + value;
-}
-}
+  data: function () {
+    return {
+      message: 'Welcome to your Vue.js app!'
+    };
+  },
+  methods: {
+    change: function (value) {
+      this.message = "new " + value;
+    }
+  }
 }
 </script>
 
 <style scoped>
 h1 {
-font-style: italic;
-color: blue;
+  font-style: italic;
+  color: blue;
 }
 </style>
 
 ```
 ```vue
 <template>
-<div id="app">
-<ul>
-<li v-for='number in numbers' :key='number' @click="addOne(number)">{{ number }}</li>
-</ul>
-<form @submit.prevent='addNumber'>
-<input type='text' v-model='newNumber'>
-<button type='submit'>Add another number</button>
-</form>
-</div>
+  <div id="app">
+    <ul>
+      <li v-for='number in numbers' :key='number' @click="addOne(number)">{{ number }}</li>
+    </ul>
+    <form @submit.prevent='addNumber'>
+      <input type='text' v-model='newNumber'>
+      <button type='submit'>Add another number</button>
+    </form>
+  </div>
 </template>
 
 <script>
 export default {
-name: 'app',
-methods: {
-addOne(num){
-num++;
-},
-addNumber() {
-const num = +this.newNumber;
-if (typeof num === 'number' && !isNaN(num)) {
-this.numbers.push(num);
-}
-}
-},
-data() {
-return {
-newNumber: null,
-numbers: [1, 23, 52, 46]
-};
-}
+  name: 'app',
+  methods: {
+    addOne(num){
+    num++;
+  },
+  addNumber() {
+    const num = +this.newNumber;
+      if (typeof num === 'number' && !isNaN(num)) {
+        this.numbers.push(num);
+      }
+    }
+  },
+  data() {
+    return {
+      newNumber: null,
+      numbers: [1, 23, 52, 46]
+    };
+  }
 }
 </script>
 
 <style lang="scss">
 ul {
-padding: 0;
-li {
-list-style-type: none;
-color: blue;
-}
+  padding: 0;
+  li {
+    list-style-type: none;
+    color: blue;
+  }
 }
 </style>
 ```
@@ -664,34 +664,34 @@ Componente sidebar, escrito en el mismo HTML y JavaScript.
 La comunicación la podemos hacer con jQuery.
 ```html
 <div id="sidebar">
-Welcome to {{ name }}
+  Welcome to {{ name }}
 </div>
 ```
 ```javascript
 // Pude ser dentro de un controlador AngularJS
 const data = {
-version: 2,
+  version: 2,
 };
 jQuery(document).trigger('updateSidebarData', [data]);
 
 // Vue
 const Sidebar = new Vue({
-el: '#sidebar',
-data() {
-return {
-dataFromMain: {
-version: 1,
-},
-};
-},
-methods: {
-handleUpdateSidebarData(e, data) {
-this.dataFromMain = data;
-},
-},
-mounted() {
-jQuery(document).on('updateSidebarData', this.handleUpdateSidebarData);
-},
+  el: '#sidebar',
+  data() {
+    return {
+      dataFromMain: {
+       version: 1,
+      },
+    };
+  },
+  methods: {
+    handleUpdateSidebarData(e, data) {
+      this.dataFromMain = data;
+    },
+  },
+  mounted() {
+    jQuery(document).on('updateSidebarData', this.handleUpdateSidebarData);
+  },
 });
 ```
 
@@ -699,21 +699,21 @@ Dentro de un controlador AnguarJs
 
 ```javascript
 function SampleAngularController($scope, $element) {
-// Create mounting point
-const MountingPoint = document.createElement('div');
+  // Create mounting point
+  const MountingPoint = document.createElement('div');
 
-// Place mounting point in target location
-$element.appendChild(MountingPoint);
+  // Place mounting point in target location
+  $element.appendChild(MountingPoint);
 
-// Create Vue component
-const ComponentVM = new Component({
-propsData: {
-message: $scope.selectedMessage, // Variable from Angular $scope
-},
-});
+  // Create Vue component
+  const ComponentVM = new Component({
+    propsData: {
+      message: $scope.selectedMessage, // Variable from Angular $scope
+    },
+  });
 
-// Mount component to mounting point
-ComponentVM.$mount(MountingPoint);
+  // Mount component to mounting point
+  ComponentVM.$mount(MountingPoint);
 }
 
 // No se olvide de llamar a $destroy() en ComponentVM
@@ -737,46 +737,46 @@ Para poder usar @
 ```javascript
 // jest.config.js
 module.exports = {
-rootDir: './webapp',
-moduleFileExtensions: ['vue', 'js', 'json', 'jsx', 'node'],
-moduleNameMapper: {
-'^@/(.*)$': '<rootDir>src/$1',
-},
-mapCoverage: true,
+  rootDir: './webapp',
+  moduleFileExtensions: ['vue', 'js', 'json', 'jsx', 'node'],
+  moduleNameMapper: {
+    '^@/(.*)$': '<rootDir>src/$1',
+  },
+  mapCoverage: true,
 };
 // npm install --save-dev babel-jest jest-vue
 module.exports = {
-rootDir: './webapp',
-moduleFileExtensions: ['vue', 'js', 'json', 'jsx', 'node'],
-moduleNameMapper: {
-'^@/(.*)$': '<rootDir>src/$1',
-},
-mapCoverage: true,
-transform: {
-'^.+\\.jsx?$': 'babel-jest',
-'^.*\\.(vue)$': 'jest-vue',
-},
-mapCoverage: true,
+  rootDir: './webapp',
+  moduleFileExtensions: ['vue', 'js', 'json', 'jsx', 'node'],
+  moduleNameMapper: {
+    '^@/(.*)$': '<rootDir>src/$1',
+  },
+  mapCoverage: true,
+  transform: {
+    '^.+\\.jsx?$': 'babel-jest',
+    '^.*\\.(vue)$': 'jest-vue',
+  },
+  mapCoverage: true,
 };
 ```
 ### Mocking dependencies
 
 ```javascript
 export default {
-fetchData() {
-return fetch('/application-data/');
-.then(function() {
-return response.json();
-});
-},
+  fetchData() {
+    return fetch('/application-data/')
+    .then(function() {
+      return response.json();
+    });
+  },
 };
 
 export default {
-fetchData() {
-return Promise.then({
-message: 'This is a static value',
-});
-},
+  fetchData() {
+    return Promise.then({
+      message: 'This is a static value',
+    });
+  },
 };
 ```
 Archivo para establecer una mocks para la importación de la API en componentes reales al correr el
@@ -786,7 +786,7 @@ test
 jest.mock('@/Api', () => require('@/ApiMock'));
 // jest.config.js
 setupFiles: [
-'<rootDir> /src/tests/setup-mocks.js',
+  '<rootDir> /src/tests/setup-mocks.js',
 ],
 ```
 ## [How To Build Vue Components That Play Nice](https://vuejsdevelopers.com/2018/06/18/vue-components-play-nicely/?jsdojo_id=revue_cpn&utm_campaign=Revue%20newsletter&utm_medium=Newsletter&utm_source=Vue.js%20Developers)
