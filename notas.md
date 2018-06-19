@@ -832,4 +832,3 @@ router.beforeEach((to, from, next) => {
 });
 ```
 
-## [Interactive Maps with Vue & Leaflet](https://travishorn.com/interactive-maps-with-vue-leaflet-5430527353c8)
