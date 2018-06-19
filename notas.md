@@ -70,7 +70,6 @@
 > - [A deep dive in the Vue.js source code (#2): the initMixin function](https://medium.com/@oneminutejs/a-deep-dive-in-the-vue-js-source-code-the-initmixin-function-part-1-dc951603a3c)
 > - [A deep dive in the Vue.js source code](https://medium.com/@oneminutejs/a-deep-dive-in-the-vue-js-source-code-fd9638c05c05)
 
-> [Understanding environments in VueJS](https://medium.com/@florenceokosun/understanding-environments-in-vuejs-74e94a139b8b)
 > [How to build SPAs with Vue.js](https://levelup.gitconnected.com/how-to-build-spa-with-vue-js-1048d0cc6b51)
 > [How To Build Vue Components That Play Nice](https://vuejsdevelopers.com/2018/06/18/vue-components-play-nicely/?jsdojo_id=revue_cpn&utm_campaign=Revue%20newsletter&utm_medium=Newsletter&utm_source=Vue.js%20Developers)
 > [Building a Real-World Web App With Vue.js and Firebase](https://savvyapps.com/blog/definitive-guide-building-web-app-vuejs-firebase?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more)
@@ -193,6 +192,15 @@ Vue.prototype.$http = axios
 /* Para evitar ver {{}} */
 ng-cloak {
   display: none !important;
+}
+```
+```javascript
+// Usar variables de entorno
+// http-server
+data () {
+  return {
+    BASE_URL: process.env.BASE_URL
+  }
 }
 ```
 ```javascript
@@ -770,7 +778,3 @@ jest.mock('@/Api', () => require('@/ApiMock'));
   '<rootDir> /src/tests/setup-mocks.js',
   ],
 ```
-
-## [Why VueX Is The Perfect Interface Between Frontend and API](https://codeburst.io/why-vuex-is-the-perfect-interface-between-frontend-and-api-271d92161709)
-
-
