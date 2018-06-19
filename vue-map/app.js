@@ -112,7 +112,7 @@ new Vue({
               [38.764792, -90.184021],
               [38.771350, -90.183334],
             ],
-          },{
+          }, {
             id: 1,
             name: 'St. Louis County',
             type: 'polygon',
@@ -228,7 +228,7 @@ new Vue({
   methods: {
     layerChanged(layerId, active) {
       const layer = this.layers.find(layer => layer.id === layerId);
-      
+
       layer.features.forEach((feature) => {
         if (active) {
           feature.leafletObject.addTo(this.map);
@@ -241,12 +241,12 @@ new Vue({
       this.layers.forEach((layer) => {
         const markerFeatures = layer.features.filter(feature => feature.type === 'marker');
         const polygonFeatures = layer.features.filter(feature => feature.type === 'polygon');
-        
+
         markerFeatures.forEach((feature) => {
           feature.leafletObject = L.marker(feature.coords)
             .bindPopup(feature.name);
         });
-        
+
         polygonFeatures.forEach((feature) => {
           feature.leafletObject = L.polygon(feature.coords)
             .bindPopup(feature.name);
@@ -256,15 +256,13 @@ new Vue({
     initMap() {
       this.map = L.map('map').setView([38.63, -90.23], 12);
       this.tileLayer = L.tileLayer(
-        'https://cartodb-basemaps-{s}.global.ssl.fastly.net/rastertiles/voyager/{z}/{x}/{y}.png',
-        {
+        'https://cartodb-basemaps-{s}.global.ssl.fastly.net/rastertiles/voyager/{z}/{x}/{y}.png', {
           maxZoom: 18,
           attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attribution">CARTO</a>',
         }
       );
-        
+
       this.tileLayer.addTo(this.map);
     },
   },
 });
-

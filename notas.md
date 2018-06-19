@@ -96,6 +96,13 @@
 
 ## [The Vue architecture that worked for me. (in small and large apps)](https://medium.com/@ederng/the-vue-architecture-that-worked-for-me-in-small-and-large-apps-9b253cf92951)
 
+### ¿Por qué Vue.js? [Building a Real-World Web App With Vue.js and Firebase](https://savvyapps.com/blog/definitive-guide-building-web-app-vuejs-firebase?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more)
+
+- La creciente popularidad de Vue.js no puede ser subestimada.
+- Lo preferimos porque es liviano, modular y requiere una configuración mínima.
+- También es extremadamente rápido y tiene un tamaño de archivo bajo.
+- Los desarrolladores pueden colocarlo fácilmente en cualquier proyecto o marco existente.
+
 ### 1.- Componentes
 
 #### 1.1.- Hacer un componente, no un cuchillo suizo:
@@ -787,14 +794,6 @@ setupFiles: [
 > Para componentes intercambiables entre proyectos
 
 ## [Building a Real-World Web App With Vue.js and Firebase](https://savvyapps.com/blog/definitive-guide-building-web-app-vuejs-firebase?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more)
-
-### ¿Por qué Vue.js?
-
-- La creciente popularidad de Vue.js no puede ser subestimada.
-- Lo preferimos porque es liviano, modular y requiere una configuración mínima.
-- También es extremadamente rápido y tiene un tamaño de archivo bajo.
-- Los desarrolladores pueden colocarlo fácilmente en cualquier proyecto o marco existente.
-
 ```javascript
 const router = new Router({
   mode: 'history',
