@@ -70,13 +70,7 @@
 > - [A deep dive in the Vue.js source code (#2): the initMixin function](https://medium.com/@oneminutejs/a-deep-dive-in-the-vue-js-source-code-the-initmixin-function-part-1-dc951603a3c)
 > - [A deep dive in the Vue.js source code](https://medium.com/@oneminutejs/a-deep-dive-in-the-vue-js-source-code-fd9638c05c05)
 
-> [How to build SPAs with Vue.js](https://levelup.gitconnected.com/how-to-build-spa-with-vue-js-1048d0cc6b51)
-> [How To Build Vue Components That Play Nice](https://vuejsdevelopers.com/2018/06/18/vue-components-play-nicely/?jsdojo_id=revue_cpn&utm_campaign=Revue%20newsletter&utm_medium=Newsletter&utm_source=Vue.js%20Developers)
-> [Building a Real-World Web App With Vue.js and Firebase](https://savvyapps.com/blog/definitive-guide-building-web-app-vuejs-firebase?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more)
-
-> [Interactive Maps with Vue & Leaflet](https://travishorn.com/interactive-maps-with-vue-leaflet-5430527353c8)
-
-CordovaJs VueNative
+## CordovaJs VueNative
 > [UglifyJS Webpack Plugin](https://github.com/webpack-contrib/uglifyjs-webpack-plugin)
 > [Vue Native: Build Beautiful Native Apps Using Vue.js ](https://vuejsfeed.com/blog/vue-native-build-beautiful-native-apps-using-vue-js?utm_campaign=Revue%20newsletter&utm_medium=Newsletter&utm_source=Vue.js%20Feed)
 > [Introducing Vue Native](https://blog.geekyants.com/introducing-vue-native-b66f71d50438)
@@ -139,7 +133,7 @@ Vue usa el patrón MVVM, por lo que una página puede funcionar como el modelo (
 Los módulos son piezas de código reutilizable que pueden implementarse donde y cuando lo deseemos. Hacer un módulo en JS es fácil, y debe seguir muchas de las reglas de los componentes debido a que los vamos a reutilizar.
 
 - 3.1.- Cuándo crear un módulo
-Si se ve repitiendo una configuración o un código en diferentes lugares, debe crear un módulo para ello.
+    Si se ve repitiendo una configuración o un código en diferentes lugares, debe crear un módulo para ello.
 
 ### 4.- Tienda
 
@@ -151,11 +145,11 @@ Si se ve repitiendo una configuración o un código en diferentes lugares, debe 
 
 - 4.2.- Única fuente de verdad
 
-Los datos de la aplicación (el usuario es administrador, el usuario está conectado, etc.). Debe estar en un solo lugar (la tienda). Las páginas solo deben leer desde aquí y no deben tener su propia copia para evitar problemas a lo largo de la aplicación.
+    Los datos de la aplicación (el usuario es administrador, el usuario está conectado, etc.). Debe estar en un solo lugar (la tienda). Las páginas solo deben leer desde aquí y no deben tener su propia copia para evitar problemas a lo largo de la aplicación.
 
 - 4.3.- Los datos son de solo lectura
 
-Las páginas no pueden mutar el estado directamente. Si necesita mutarlo, es a través de una acción.
+    Las páginas no pueden mutar el estado directamente. Si necesita mutarlo, es a través de una acción.
 
 - 4.4.- ¿Qué entra en la tienda?
 
@@ -167,17 +161,17 @@ Las páginas no pueden mutar el estado directamente. Si necesita mutarlo, es a t
 ### 5.- Estilos para la aplicación (componentes y diseños)
 
 - 5.1.- Diseño de componentes "internos"
-Por interno quiero decir, que no son de código abierto, los tiene en su carpeta 'componentes' o son internos de la compañía.
+    Por interno quiero decir, que no son de código abierto, los tiene en su carpeta 'componentes' o son internos de la compañía.
 
-En este caso, podemos hacer que nuestro componente tenga un estilo base, pero debería poder aceptar estilos desde el exterior.
+    En este caso, podemos hacer que nuestro componente tenga un estilo base, pero debería poder aceptar estilos desde el exterior.
 
 - 5.2.- Componentes de estilo que serán de código abierto.
-Estos componentes deben tener el estilo mínimo posible y todo debe ser elástico desde el exterior
+    Estos componentes deben tener el estilo mínimo posible y todo debe ser elástico desde el exterior
 
 - 5.3.- Estilos globales
-Deberíamos tener un archivo css global. Llamo a este tema, aquí es donde vamos a definir las fuentes, el tamaño de letra, etc. Pero también algunos estilos de componentes.
-> Por ejemplo, si tenemos un componente con el mismo estilo a lo largo de nuestra aplicación, esos estilos deben estar en el tema, con esto evitamos la sobre escritura de css.
-El CSS base debe estar aquí y los estilos que van a estar en la aplicación.
+    Deberíamos tener un archivo css global. Llamo a este tema, aquí es donde vamos a definir las fuentes, el tamaño de letra, etc. Pero también algunos estilos de componentes.
+    > Por ejemplo, si tenemos un componente con el mismo estilo a lo largo de nuestra aplicación, esos estilos deben estar en el tema, con esto evitamos la sobre escritura de css.
+    El CSS base debe estar aquí y los estilos que van a estar en la aplicación.
 
 ## Más tips
 > Si quires incorporar Vue componentes en AngularJs [ngVue](https://github.com/ngVue/ngVue)
@@ -191,16 +185,26 @@ Vue.prototype.$http = axios
 ```css
 /* Para evitar ver {{}} */
 ng-cloak {
-  display: none !important;
+display: none !important;
+}
+```
+```javascript
+// Los componentes no lo vuelve a crear, por eso cuando cambiamos
+// el parámetro de la URL no cambie el contenido.
+// Para solucionar este puto usarmos un watch
+watch: {
+'$route'() {
+this.getPost(this.id);
+}
 }
 ```
 ```javascript
 // Usar variables de entorno
 // http-server
 data () {
-  return {
-    BASE_URL: process.env.BASE_URL
-  }
+return {
+BASE_URL: process.env.BASE_URL
+}
 }
 ```
 ```javascript
@@ -247,11 +251,11 @@ UI Framework
 - [Bootstrap + Vue]()https://bootstrap-vue.js.org/
 - [Fish-UI](https://github.com/myliang/fish-ui)
 
-Mobile Framework
+    Mobile Framework
 - [quasar](https://quasar-framework.org)
 - [onsen.io](https://onsen.io/vue/)
 
-Plugin
+    Plugin
 - [Vue2Leaflet](https://github.com/KoRiGaN/Vue2Leaflet)
 - [vuelidate](https://github.com/monterail/vuelidate) :D
 - [vee-validate](https://github.com/baianat/vee-validate)
@@ -321,7 +325,7 @@ Angular, por otro lado, viene con un nido confuso de herramientas de compilació
 Eric Clemmons tiene un artículo al respecto que dice lo siguiente:
 
 """
-  Todavía hay un montón de herramientas instaladas, que no está acostumbrado, al comenzar con el marco. Se generan, pero es probable que muchos desarrolladores no entiendan lo que sucede bajo el capó, o les lleva mucho tiempo hacerlo.
+Todavía hay un montón de herramientas instaladas, que no está acostumbrado, al comenzar con el marco. Se generan, pero es probable que muchos desarrolladores no entiendan lo que sucede bajo el capó, o les lleva mucho tiempo hacerlo.
 """
 
 Vue parece ser el más limpio y liviano de los tres marcos. GitLab tiene una publicación en el blog sobre su decisión con respecto a Vue.js (octubre de 2016):
@@ -343,7 +347,7 @@ Reaccionar a menudo funciona incluido con Redux. Redux se describe a sí mismo e
 * El estado es de solo lectura
 * Los cambios se realizan con funciones puras
 
-En otras palabras: el estado de la aplicación completa se almacena en un árbol de objetos dentro de una sola tienda. Esto ayuda a depurar la aplicación, y algunas funcionalidades son más fáciles de implementar. El estado es de solo lectura y solo se puede cambiar a través de acciones para evitar condiciones de carrera (también ayuda con la depuración). Los reductores se escriben para especificar cómo los estados se pueden transformar mediante acciones.
+    En otras palabras: el estado de la aplicación completa se almacena en un árbol de objetos dentro de una sola tienda. Esto ayuda a depurar la aplicación, y algunas funcionalidades son más fáciles de implementar. El estado es de solo lectura y solo se puede cambiar a través de acciones para evitar condiciones de carrera (también ayuda con la depuración). Los reductores se escriben para especificar cómo los estados se pueden transformar mediante acciones.
 
 ### 2.7 Flexibilidad y reducción de tamaño a microservicios
 Puede trabajar con React o Vue simplemente agregando la biblioteca Javascript al código fuente. Esto no es posible con Angular debido a su uso de TypeScript.
@@ -434,9 +438,9 @@ Primero comenzamos a definir cuáles iban a ser nuestros puntos de decisión. Sa
 * Reactividad
 * Componente basado
 
-Después de decidir nuestros puntos de decisión, tuve que ensuciarme las manos, así que le di a React y Vue.js un par de días cada uno para revisar cada punto de decisión que Google no iba a responder. Como no sabía nada de ninguno de ellos, al final de dos días reevalué lo lejos que llegué a reescribir algunas partes del proyecto real que íbamos a migrar.
+    Después de decidir nuestros puntos de decisión, tuve que ensuciarme las manos, así que le di a React y Vue.js un par de días cada uno para revisar cada punto de decisión que Google no iba a responder. Como no sabía nada de ninguno de ellos, al final de dos días reevalué lo lejos que llegué a reescribir algunas partes del proyecto real que íbamos a migrar.
 
-Las partes que elegí reescribir fueron:
+    Las partes que elegí reescribir fueron:
 
 * Algunas llamadas básicas de API
 * Dos diseños para dos páginas diferentes.
@@ -444,11 +448,11 @@ Las partes que elegí reescribir fueron:
 * Formularios de inicio de sesión y algunos formularios de contenido
 * Un modo de arranque
 
-Me sorprendió lo lejos que llegué con Vue.js, en un par de días tuve una prueba de concepto para mostrar al resto del equipo y a mi CTO. Obtuve una buena comprensión de los conceptos básicos de Vue.js, definí una arquitectura buena y extensible pero, lo más importante, disfruté mucho la experiencia de escribir código con ella y sentí que lo hacía más rápido que con React.
+    Me sorprendió lo lejos que llegué con Vue.js, en un par de días tuve una prueba de concepto para mostrar al resto del equipo y a mi CTO. Obtuve una buena comprensión de los conceptos básicos de Vue.js, definí una arquitectura buena y extensible pero, lo más importante, disfruté mucho la experiencia de escribir código con ella y sentí que lo hacía más rápido que con React.
 
-React fue mucho más difícil de lo que pensaba, elegir entre Redux y MobX es más problemático que tener una opción que esté bien integrada con el framework como Vue.js y Vuex do. Esto es simple porque, al no tener experiencia con un marco, le da más confianza sabiendo que un marco tiene una biblioteca oficial para hacer algo. Por cierto, sentí que la reactividad era más fácil con Vuex que con Redux, pero probablemente sea solo una percepción, como todas las curvas de aprendizaje.
+    React fue mucho más difícil de lo que pensaba, elegir entre Redux y MobX es más problemático que tener una opción que esté bien integrada con el framework como Vue.js y Vuex do. Esto es simple porque, al no tener experiencia con un marco, le da más confianza sabiendo que un marco tiene una biblioteca oficial para hacer algo. Por cierto, sentí que la reactividad era más fácil con Vuex que con Redux, pero probablemente sea solo una percepción, como todas las curvas de aprendizaje.
 
-JSX también era un problema ya que no podíamos reutilizar el código HTML y Vue.js nos permitió hacerlo en cierta medida. Los archivos Vue son realmente buenos para trabajar, ya que no me gustan las plantillas en línea. React mezcla tanto JSX / HTML con código JS que simplemente no me gusta, ya que creo firmemente en la separación de las preocupaciones y se ve feo en mi humilde opinión.
+    JSX también era un problema ya que no podíamos reutilizar el código HTML y Vue.js nos permitió hacerlo en cierta medida. Los archivos Vue son realmente buenos para trabajar, ya que no me gustan las plantillas en línea. React mezcla tanto JSX / HTML con código JS que simplemente no me gusta, ya que creo firmemente en la separación de las preocupaciones y se ve feo en mi humilde opinión.
 
 #### Velocidad de codificación
 
@@ -529,11 +533,11 @@ Ayuda a crear las aplicaciones de iluminación sin ninguna complejidad. El tama�
 
 Aquí está el resumen de mi artículo anterior. Lista breve de los principales problemas angulares para mí:
 
-     Enrutador horrible
-     Inyección de Dependencia pesada y no tan útil (ver a continuación)
-     Sistemas de módulos muy discutibles (no utilizados en ningún otro marco)
-     Muchas abstracciones innecesarias, diseño API extraño
-     Observable como núcleo del marco
+Enrutador horrible
+Inyección de Dependencia pesada y no tan útil (ver a continuación)
+Sistemas de módulos muy discutibles (no utilizados en ningún otro marco)
+Muchas abstracciones innecesarias, diseño API extraño
+Observable como núcleo del marco
 
 ### [Why not React](https://gist.github.com/Igogrek/58046e1dda1638012299129bd0ae4ffd#why-not-react)
 
@@ -557,79 +561,79 @@ Desarrolladores usan mas data() en lugar de Vuex, a medida que resaca el código
 
 ```vue
 <template>
-  <div>
-    <h1>{{ message }}</h1>
-    <input v-model="message">
-    <button v-on:click="change('message')">change</button>
-  </div>
+<div>
+<h1>{{ message }}</h1>
+<input v-model="message">
+<button v-on:click="change('message')">change</button>
+</div>
 </template>
 
 <script>
 export default {
-  data: function () {
-    return {
-      message: 'Welcome to your Vue.js app!'
-    };
-  },
-  methods: {
-    change: function (value) {
-      this.message = "new " + value;
-    }
-  }
+data: function () {
+return {
+message: 'Welcome to your Vue.js app!'
+};
+},
+methods: {
+change: function (value) {
+this.message = "new " + value;
+}
+}
 }
 </script>
 
 <style scoped>
 h1 {
-  font-style: italic;
-  color: blue;
+font-style: italic;
+color: blue;
 }
 </style>
 
 ```
 ```vue
 <template>
-  <div id="app">
-    <ul>
-      <li v-for='number in numbers' :key='number' @click="addOne(number)">{{ number }}</li>
-    </ul>
-    <form @submit.prevent='addNumber'>
-      <input type='text' v-model='newNumber'>
-      <button type='submit'>Add another number</button>
-    </form>
-  </div>
+<div id="app">
+<ul>
+<li v-for='number in numbers' :key='number' @click="addOne(number)">{{ number }}</li>
+</ul>
+<form @submit.prevent='addNumber'>
+<input type='text' v-model='newNumber'>
+<button type='submit'>Add another number</button>
+</form>
+</div>
 </template>
 
 <script>
 export default {
-  name: 'app',
-  methods: {
-    addOne(num){
-      num++;
-    },
-    addNumber() {
-      const num = +this.newNumber;
-      if (typeof num === 'number' && !isNaN(num)) {
-        this.numbers.push(num);
-      }
-    }
-  },
-  data() {
-    return {
-      newNumber: null,
-      numbers: [1, 23, 52, 46]
-    };
-  }
+name: 'app',
+methods: {
+addOne(num){
+num++;
+},
+addNumber() {
+const num = +this.newNumber;
+if (typeof num === 'number' && !isNaN(num)) {
+this.numbers.push(num);
+}
+}
+},
+data() {
+return {
+newNumber: null,
+numbers: [1, 23, 52, 46]
+};
+}
 }
 </script>
 
 <style lang="scss">
 ul {
-  padding: 0;
-  li {
-    list-style-type: none;
-    color: blue;
-  }
+padding: 0;
+li {
+list-style-type: none;
+color: blue;
+}
 }
 </style>
 ```
@@ -653,34 +657,34 @@ Componente sidebar, escrito en el mismo HTML y JavaScript.
 La comunicación la podemos hacer con jQuery.
 ```html
 <div id="sidebar">
-  Welcome to {{ name }}
+Welcome to {{ name }}
 </div>
 ```
 ```javascript
 // Pude ser dentro de un controlador AngularJS
 const data = {
-  version: 2,
+version: 2,
 };
 jQuery(document).trigger('updateSidebarData', [data]);
 
 // Vue
 const Sidebar = new Vue({
-  el: '#sidebar',
-  data() {
-    return {
-      dataFromMain: {
-        version: 1,
-      },
-    };
-  },
-  methods: {
-    handleUpdateSidebarData(e, data) {
-      this.dataFromMain = data;
-    },
-  },
-  mounted() {
-    jQuery(document).on('updateSidebarData', this.handleUpdateSidebarData);
-  },
+el: '#sidebar',
+data() {
+return {
+dataFromMain: {
+version: 1,
+},
+};
+},
+methods: {
+handleUpdateSidebarData(e, data) {
+this.dataFromMain = data;
+},
+},
+mounted() {
+jQuery(document).on('updateSidebarData', this.handleUpdateSidebarData);
+},
 });
 ```
 
@@ -688,21 +692,21 @@ Dentro de un controlador AnguarJs
 
 ```javascript
 function SampleAngularController($scope, $element) {
-  // Create mounting point
-  const MountingPoint = document.createElement('div');
+// Create mounting point
+const MountingPoint = document.createElement('div');
 
-  // Place mounting point in target location
-  $element.appendChild(MountingPoint);
+// Place mounting point in target location
+$element.appendChild(MountingPoint);
 
-  // Create Vue component
-  const ComponentVM = new Component({
-    propsData: {
-      message: $scope.selectedMessage, // Variable from Angular $scope
-    },
-  });
+// Create Vue component
+const ComponentVM = new Component({
+propsData: {
+message: $scope.selectedMessage, // Variable from Angular $scope
+},
+});
 
-  // Mount component to mounting point
-  ComponentVM.$mount(MountingPoint);
+// Mount component to mounting point
+ComponentVM.$mount(MountingPoint);
 }
 
 // No se olvide de llamar a $destroy() en ComponentVM
@@ -726,46 +730,46 @@ Para poder usar @
 ```javascript
 // jest.config.js
 module.exports = {
-  rootDir: './webapp',
-  moduleFileExtensions: ['vue', 'js', 'json', 'jsx', 'node'],
-  moduleNameMapper: {
-    '^@/(.*)$': '<rootDir>src/$1',
-  },
-  mapCoverage: true,
+rootDir: './webapp',
+moduleFileExtensions: ['vue', 'js', 'json', 'jsx', 'node'],
+moduleNameMapper: {
+'^@/(.*)$': '<rootDir>src/$1',
+},
+mapCoverage: true,
 };
 // npm install --save-dev babel-jest jest-vue
 module.exports = {
-  rootDir: './webapp',
-  moduleFileExtensions: ['vue', 'js', 'json', 'jsx', 'node'],
-  moduleNameMapper: {
-    '^@/(.*)$': '<rootDir>src/$1',
-  },
-  mapCoverage: true,
-  transform: {
-    '^.+\\.jsx?$': 'babel-jest',
-    '^.*\\.(vue)$': 'jest-vue',
-  },
-  mapCoverage: true,
+rootDir: './webapp',
+moduleFileExtensions: ['vue', 'js', 'json', 'jsx', 'node'],
+moduleNameMapper: {
+'^@/(.*)$': '<rootDir>src/$1',
+},
+mapCoverage: true,
+transform: {
+'^.+\\.jsx?$': 'babel-jest',
+'^.*\\.(vue)$': 'jest-vue',
+},
+mapCoverage: true,
 };
 ```
 ### Mocking dependencies
 
 ```javascript
 export default {
-  fetchData() {
-    return fetch('/application-data/');
-      .then(function() {
-        return response.json();
-      });
-  },
+fetchData() {
+return fetch('/application-data/');
+.then(function() {
+return response.json();
+});
+},
 };
 
 export default {
-  fetchData() {
-    return Promise.then({
-      message: 'This is a static value',
-    });
-  },
+fetchData() {
+return Promise.then({
+message: 'This is a static value',
+});
+},
 };
 ```
 Archivo para establecer una mocks para la importación de la API en componentes reales al correr el
@@ -774,7 +778,58 @@ test
 // setup-mocks.js
 jest.mock('@/Api', () => require('@/ApiMock'));
 // jest.config.js
-  setupFiles: [
-  '<rootDir> /src/tests/setup-mocks.js',
-  ],
+setupFiles: [
+'<rootDir> /src/tests/setup-mocks.js',
+],
 ```
+## [How To Build Vue Components That Play Nice](https://vuejsdevelopers.com/2018/06/18/vue-components-play-nicely/?jsdojo_id=revue_cpn&utm_campaign=Revue%20newsletter&utm_medium=Newsletter&utm_source=Vue.js%20Developers)
+
+> Para componentes intercambiables entre proyectos
+
+## [Building a Real-World Web App With Vue.js and Firebase](https://savvyapps.com/blog/definitive-guide-building-web-app-vuejs-firebase?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more)
+
+### ¿Por qué Vue.js?
+
+- La creciente popularidad de Vue.js no puede ser subestimada.
+- Lo preferimos porque es liviano, modular y requiere una configuración mínima.
+- También es extremadamente rápido y tiene un tamaño de archivo bajo.
+- Los desarrolladores pueden colocarlo fácilmente en cualquier proyecto o marco existente.
+
+```javascript
+const router = new Router({
+  mode: 'history',
+    routes: [
+      {
+        path: '*',
+        redirect: '/dashboard'
+      },
+      {
+        path: '/login',
+        name: 'Login',
+        component: Login
+      },
+      {
+        path: '/dashboard',
+        name: 'Dashboard',
+        component: Dashboard,
+        meta: {
+        requiresAuth: true
+      }
+    ]
+  });
+
+router.beforeEach((to, from, next) => {
+    const requiresAuth = to.matched.some(x => x.meta.requiresAuth)
+    const currentUser = firebase.auth().currentUser
+
+    if (requiresAuth && !currentUser) {
+        next('/login')
+    } else if (requiresAuth && currentUser) {
+        next()
+    } else {
+        next()
+    }
+});
+```
+
+## [Interactive Maps with Vue & Leaflet](https://travishorn.com/interactive-maps-with-vue-leaflet-5430527353c8)
