@@ -1,5 +1,7 @@
 # Curso
 
+- ¿Que es vue y  como nacio?
+  - https://012.vuejs.org/images/mvvm.png
 - Vue simple (Ejemplo de la pagina de vue)
 - Vue proyecto simple
   - [Vue cli](https://cli.vuejs.org/) v2 o v3
@@ -68,20 +70,19 @@
 > - [A deep dive in the Vue.js source code (#2): the initMixin function](https://medium.com/@oneminutejs/a-deep-dive-in-the-vue-js-source-code-the-initmixin-function-part-1-dc951603a3c)
 > - [A deep dive in the Vue.js source code](https://medium.com/@oneminutejs/a-deep-dive-in-the-vue-js-source-code-fd9638c05c05)
 
-> [From VanillaJS to Vue.js: A refactoring tale](https://hackernoon.com/from-vanillajs-to-vue-js-a-refactoring-tale-846bee20ba3d)
-> [Building a Real-World Web App With Vue.js and Firebase](https://savvyapps.com/blog/definitive-guide-building-web-app-vuejs-firebase?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more)
-> [How To Build Vue Components Like A Pro 😎](https://blog.bitsrc.io/how-to-build-vue-components-like-a-pro-fd89fd4d524d)
-> [Why VueX Is The Perfect Interface Between Frontend and API](https://codeburst.io/why-vuex-is-the-perfect-interface-between-frontend-and-api-271d92161709)
 > [Understanding environments in VueJS](https://medium.com/@florenceokosun/understanding-environments-in-vuejs-74e94a139b8b)
 > [How to build SPAs with Vue.js](https://levelup.gitconnected.com/how-to-build-spa-with-vue-js-1048d0cc6b51)
 > [How To Build Vue Components That Play Nice](https://vuejsdevelopers.com/2018/06/18/vue-components-play-nicely/?jsdojo_id=revue_cpn&utm_campaign=Revue%20newsletter&utm_medium=Newsletter&utm_source=Vue.js%20Developers)
+> [Building a Real-World Web App With Vue.js and Firebase](https://savvyapps.com/blog/definitive-guide-building-web-app-vuejs-firebase?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more)
 
 > [Interactive Maps with Vue & Leaflet](https://travishorn.com/interactive-maps-with-vue-leaflet-5430527353c8)
-> [How to setup a Cordova App using Vue.js](https://medium.com/@valeriocapogna/how-to-setup-a-cordova-app-using-vue-js-8ba1315b9666)
+
+CordovaJs VueNative
+> [UglifyJS Webpack Plugin](https://github.com/webpack-contrib/uglifyjs-webpack-plugin)
 > [Vue Native: Build Beautiful Native Apps Using Vue.js ](https://vuejsfeed.com/blog/vue-native-build-beautiful-native-apps-using-vue-js?utm_campaign=Revue%20newsletter&utm_medium=Newsletter&utm_source=Vue.js%20Feed)
 > [Introducing Vue Native](https://blog.geekyants.com/introducing-vue-native-b66f71d50438)
-> [UglifyJS Webpack Plugin](https://github.com/webpack-contrib/uglifyjs-webpack-plugin)
 > [How you can do continuous delivery with Vue, Docker, and Azure](https://medium.freecodecamp.org/how-you-can-do-continuous-delivery-with-vue-docker-and-azure-2f1e31fff832)
+> [How to setup a Cordova App using Vue.js](https://medium.com/@valeriocapogna/how-to-setup-a-cordova-app-using-vue-js-8ba1315b9666)
 
 ## Free Books
 > [20 Things I Learned About Browsers and the Web](https://medium.com/web-development-zone/top-free-ebooks-for-web-designers-web-developers-f8c6a70465ad)
@@ -367,7 +368,6 @@ Algunas personas afirman que las cosas que han hecho en React hubieran sido mejo
 Mientras tanto, Angular y React tienen su propia forma de hacer las cosas. Es posible que se interpongan en su camino, porque necesita ajustar sus prácticas para que las cosas funcionen a su manera . Eso puede ser perjudicial porque es menos flexible y hay una curva de aprendizaje más pronunciada. También podría ser un beneficio porque estás obligado a aprender los conceptos correctos mientras aprendes la tecnología. Con Vue, puedes hacer las cosas a la antigua usanza de Javascript. Esto puede ser más fácil al principio, pero podría convertirse en un problema a largo plazo si las cosas no se hacen correctamente.
 
 Cuando se trata de depuración, es una ventaja que React y Vue tengan menos magia. La búsqueda de errores es más fácil porque hay menos lugares para buscar y los rastros de pila tienen mejores distinciones entre su propio código y el de las bibliotecas. Las personas que trabajan con React informan que nunca tienen que leer el código fuente de la biblioteca. Sin embargo, al depurar su aplicación angular, a menudo necesita depurar las partes internas de Angular para comprender el modelo subyacente. En el lado positivo, se supone que los mensajes de error deben ser más claros y más informativos, comenzando con Angular 4.
-
 
 ### ¿Qué debería elegir?
 
@@ -770,4 +770,7 @@ jest.mock('@/Api', () => require('@/ApiMock'));
   '<rootDir> /src/tests/setup-mocks.js',
   ],
 ```
+
+## [Why VueX Is The Perfect Interface Between Frontend and API](https://codeburst.io/why-vuex-is-the-perfect-interface-between-frontend-and-api-271d92161709)
+
 
