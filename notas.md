@@ -19,6 +19,8 @@
 - Axion
 - Vuex
 - Test
+  - [circleci](https://circleci.com/)
+  - [Jest](https://facebook.github.io/jest/en/) jest --coverage
 - Cargar listas a demanda
 
 # Por leer o interesantes para leer
@@ -247,6 +249,7 @@ Limpiar las URL, evita problemas en linux
 > [Awesome Vue.js](https://github.com/vuejs/awesome-vue)
 > [vuescript](http://www.vuescript.com/)
 > [vuejsdevelopers.com](https://vuejsdevelopers.com/)
+> [creative-tim.com](https://www.creative-tim.com/)
 
 UI Framework
 - [vuetifyjs](https://vuetifyjs.com/en/)
@@ -258,11 +261,11 @@ UI Framework
 - [Bootstrap + Vue]()https://bootstrap-vue.js.org/
 - [Fish-UI](https://github.com/myliang/fish-ui)
 
-    Mobile Framework
+Mobile Framework
 - [quasar](https://quasar-framework.org)
 - [onsen.io](https://onsen.io/vue/)
 
-    Plugin
+Plugin
 - [Vue2Leaflet](https://github.com/KoRiGaN/Vue2Leaflet)
 - [vuelidate](https://github.com/monterail/vuelidate) :D
 - [vee-validate](https://github.com/baianat/vee-validate)
@@ -831,4 +834,13 @@ router.beforeEach((to, from, next) => {
 });
 ```
 
+## Other course
 
+```html
+@keyup.esc="clear('email')"
+```
+
+Los filtros en vue puede ser funciones, al declara el primer parámetro es el valor que recave y el
+el resto pasa como argumentos da la función cuando es llamado
+
+> 06
