@@ -20,16 +20,20 @@
 - Vuex
 - Test
   - [circleci](https://circleci.com/)
-  - [Jest](https://facebook.github.io/jest/en/) jest --coverage
+  - [Jest](https://facebook.github.io/jest/en/) jest --coverage [Doc](https://alexjoverm.github.io/series/Unit-Testing-Vue-js-Components-with-the-Official-Vue-Testing-Tools-and-Jest/), [Ejemplo](https://hackernoon.com/jest-for-all-episode-1-vue-js-d616bccbe186)
+  - [Vue Test Utils](https://github.com/vuejs/vue-test-utils/) y
+  - e2e [nightwatch](http://nightwatchjs.org/)
 - Cargar listas a demanda
 
 # Por leer o interesantes para leer
 > [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 > [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
-> [The Cookbook vs the Guide](https://vuejs.org/v2/cookbook/#The-Cookbook-vs-the-Guide)
-> [New in vuejs 3](https://blog.cloudboost.io/reactivity-in-vue-js-2-vs-vue-js-3-dcdd0728dcdf)
+> - [The Cookbook vs the Guide](https://vuejs.org/v2/cookbook/#The-Cookbook-vs-the-Guide)
+> - [New in vuejs 3](https://blog.cloudboost.io/reactivity-in-vue-js-2-vs-vue-js-3-dcdd0728dcdf)
+>
 > [leer post de oneminutejs](https://medium.com/@oneminutejs)
+>
 > - [A deep dive in the Vue.js source code (#40): _directInactive](https://medium.com/@oneminutejs/a-deep-dive-in-the-vue-js-source-code-40-directinactive-3ea359cba427)
 > - [A deep dive in the Vue.js source code (#39): _inactive](https://medium.com/@oneminutejs/a-deep-dive-in-the-vue-js-source-code-39-inactive-c9210b228a4d)
 > - [A deep dive in the Vue.js source code (#38): _watcher](https://medium.com/@oneminutejs/a-deep-dive-in-the-vue-js-source-code-38-watcher-8fabf53169f2)
@@ -73,26 +77,26 @@
 > - [A deep dive in the Vue.js source code](https://medium.com/@oneminutejs/a-deep-dive-in-the-vue-js-source-code-fd9638c05c05)
 
 ## CordovaJs VueNative
-> [UglifyJS Webpack Plugin](https://github.com/webpack-contrib/uglifyjs-webpack-plugin)
-> [Vue Native: Build Beautiful Native Apps Using Vue.js ](https://vuejsfeed.com/blog/vue-native-build-beautiful-native-apps-using-vue-js?utm_campaign=Revue%20newsletter&utm_medium=Newsletter&utm_source=Vue.js%20Feed)
-> [Introducing Vue Native](https://blog.geekyants.com/introducing-vue-native-b66f71d50438)
-> [How you can do continuous delivery with Vue, Docker, and Azure](https://medium.freecodecamp.org/how-you-can-do-continuous-delivery-with-vue-docker-and-azure-2f1e31fff832)
-> [How to setup a Cordova App using Vue.js](https://medium.com/@valeriocapogna/how-to-setup-a-cordova-app-using-vue-js-8ba1315b9666)
+> - [UglifyJS Webpack Plugin](https://github.com/webpack-contrib/uglifyjs-webpack-plugin)
+> - [Vue Native: Build Beautiful Native Apps Using Vue.js ](https://vuejsfeed.com/blog/vue-native-build-beautiful-native-apps-using-vue-js?utm_campaign=Revue%20newsletter&utm_medium=Newsletter&utm_source=Vue.js%20Feed)
+> - [Introducing Vue Native](https://blog.geekyants.com/introducing-vue-native-b66f71d50438)
+> - [How you can do continuous delivery with Vue, Docker, and Azure](https://medium.freecodecamp.org/how-you-can-do-continuous-delivery-with-vue-docker-and-azure-2f1e31fff832)
+> - [How to setup a Cordova App using Vue.js](https://medium.com/@valeriocapogna/how-to-setup-a-cordova-app-using-vue-js-8ba1315b9666)
 
 ## Free Books
-> [20 Things I Learned About Browsers and the Web](https://medium.com/web-development-zone/top-free-ebooks-for-web-designers-web-developers-f8c6a70465ad)
-> [You Don’t Know JS (book series)](https://github.com/getify/You-Dont-Know-JS)
-> [Speaking JavaScript](http://speakingjs.com/es5/)
+> - [20 Things I Learned About Browsers and the Web](https://medium.com/web-development-zone/top-free-ebooks-for-web-designers-web-developers-f8c6a70465ad)
+> - [You Don’t Know JS (book series)](https://github.com/getify/You-Dont-Know-JS)
+> - [Speaking JavaScript](http://speakingjs.com/es5/)
 
-> [A Guide to HTML5 & CSS3](https://html5hive.org/free-ebook-a-guide-to-html5-and-css3/)
-> [Adaptive Web Design](https://adaptivewebdesign.info/1st-edition/)
-> [Eloquent JavaScript](https://medium.com/web-development-zone/top-free-ebooks-for-web-designers-web-developers-f8c6a70465ad)
-> [Learning JavaScript Design Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
-> [Programming JavaScript Applications](http://chimera.labs.oreilly.com/books/1234000000262/index.html)
-> [The Guide to Usability Testing (PDF)](https://www.uxpin.com/studio/ebooks/guide-to-usability-testing/)
-> [Web UI Best Practices (PDF)](https://speckyboy.com/free-e-book-web-ui-best-practices/)
-> [The Guide to UX Design Process & Documentation (PDF)](https://speckyboy.com/guide-ux-design-process-documentation/)
-> [The Guide to Mockups (PDF)](https://speckyboy.com/free-ebook-guide-mockups/)
+> - [A Guide to HTML5 & CSS3](https://html5hive.org/free-ebook-a-guide-to-html5-and-css3/)
+> - [Adaptive Web Design](https://adaptivewebdesign.info/1st-edition/)
+> - [Eloquent JavaScript](https://medium.com/web-development-zone/top-free-ebooks-for-web-designers-web-developers-f8c6a70465ad)
+> - [Learning JavaScript Design Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
+> - [Programming JavaScript Applications](http://chimera.labs.oreilly.com/books/1234000000262/index.html)
+> - [The Guide to Usability Testing (PDF)](https://www.uxpin.com/studio/ebooks/guide-to-usability-testing/)
+> - [Web UI Best Practices (PDF)](https://speckyboy.com/free-e-book-web-ui-best-practices/)
+> - [The Guide to UX Design Process & Documentation (PDF)](https://speckyboy.com/guide-ux-design-process-documentation/)
+> - [The Guide to Mockups (PDF)](https://speckyboy.com/free-ebook-guide-mockups/)
 
 # General
 
@@ -269,6 +273,11 @@ Plugin
 - [Vue2Leaflet](https://github.com/KoRiGaN/Vue2Leaflet)
 - [vuelidate](https://github.com/monterail/vuelidate) :D
 - [vee-validate](https://github.com/baianat/vee-validate)
+
+Lib
+- [lodash](https://lodash.com/docs#debounce)
+- [sinon](http://sinonjs.org/)
+- [Jest](https://facebook.github.io/jest/en/) jest --coverage
 
 ## Ejemplos
 - [shopping-cart](https://github.com/vuejs/vuex/tree/dev/examples/shopping-cart)
@@ -797,6 +806,7 @@ setupFiles: [
 > Para componentes intercambiables entre proyectos
 
 ## [Building a Real-World Web App With Vue.js and Firebase](https://savvyapps.com/blog/definitive-guide-building-web-app-vuejs-firebase?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more)
+
 ```javascript
 const router = new Router({
   mode: 'history',
@@ -834,6 +844,40 @@ router.beforeEach((to, from, next) => {
 });
 ```
 
+## [Vuex getters are great, but don’t overuse them](https://codeburst.io/vuex-getters-are-great-but-dont-overuse-them-9c946689b414)
+
+En lugar de hacer esto usar `...mapState()`
+```javascript
+ getters: {
+    movies: state => state.movies,
+    genres: state => state.genres
+  }
+```
+
+En caso de usar módulos
+```javascript
+import { mapState } from 'vuex'
+
+export default {
+  computed: mapState({
+    movies: state => state.movieList.movies,
+    genres: state => state.movieList.genres
+  })
+}
+```
+
+Usar los getters cuando se necesita algo calculado y que sea compartido por componentes.
+Los getters se guardan en __cache__ y se calculan cuando cambian los datos, pero si
+el getters devuelve una función el cache no funcionara.
+
+```javascript
+getters: {
+  getMovieById: (state, getters) => (id) => {
+    return state.movies.find (movie => movie.id === id)
+  }
+}
+```
+
 ## Other course
 
 ```html
@@ -843,4 +887,35 @@ router.beforeEach((to, from, next) => {
 Los filtros en vue puede ser funciones, al declara el primer parámetro es el valor que recave y el
 el resto pasa como argumentos da la función cuando es llamado
 
-> 06
+Ordenar una lista, según atributos
+
+```javascript
+sortedUsers() {
+  if (!this.sortingKey) {
+    return this.users;
+  }
+
+  return this.users.concat().sort((userA, userB) => {
+    if (userA[this.sortingKey] > userB[this.sortingKey]) {
+      return 1;
+    }
+
+    if (userA[this.sortingKey] < userB[this.sortingKey]) {
+      return -1;
+    }
+
+    return 0;
+  });
+},
+
+```
+
+## Test e2e instalar y configurar nightwatch
+
+Usa Selenium Server
+
+![Cominicacion entre nightwatch, selenium y firefox](http://nightwatchjs.org/img/operation.png)
+
+```bash
+java -version
+```
