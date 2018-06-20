@@ -914,8 +914,12 @@ sortedUsers() {
 
 Usa Selenium Server
 
-![Cominicacion entre nightwatch, selenium y firefox](http://nightwatchjs.org/img/operation.png)
+![Comunicación entre nightwatch, selenium y firefox](http://nightwatchjs.org/img/operation.png)
 
 ```bash
 java -version
+
+// Agregar drive para firefox
+npm install geckodriver -D
 ```
+
