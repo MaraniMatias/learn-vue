@@ -922,4 +922,41 @@ java -version
 // Agregar drive para firefox
 npm install geckodriver -D
 ```
+## [How to Structure a Vue.js Project](https://itnext.io/how-to-structure-a-vue-js-project-29e4ddc1aeeb)
+
+.
+├── app.css
+├── App.vue
+├── assets
+│   └── ...
+├── components
+│   └── ...
+├── main.js
+├── mixins
+│   └── ...
+├── router
+│   └── index.js
+├── store
+│   ├── index.js
+│   ├── modules
+│   │   └── ...
+│   └── mutation-types.js
+├── translations
+│   └── index.js
+├── utils
+│   └── ...
+└── views
+    └── ...
+
+Algunos detalles sobre cada una de estas carpetas:
+
+- actions: dónde coloca los activos que se importan en sus componentes
+- componentes : todos los componentes de los proyectos que no son los puntos de vista principales
+- mixins : las mixins son las partes del código javascript que se reutiliza en diferentes componentes. En una mezcla, puede poner los métodos de cualquier componente de Vue.js, se fusionarán con los del componente que lo usa.
+- router: todas las rutas de sus proyectos (en mi caso, las tengo en index.js). Básicamente en Vue.js todo es un componente. Pero no todo es una página. Una página tiene una ruta como "/ tablero de instrumentos", "/ configuraciones" o "/ búsqueda". Si un componente tiene una ruta, se enruta.
+- store (opcional) - Las constantes de Vuex en mutation-type.js, los módulos de Vuex en los módulos de la subcarpeta (que luego se cargan en el index.js).
+- translations (opcional) - Archivos regionales, uso Vue-i18n, y funciona bastante bien.
+- utils (opcional) : funciones que uso en algunos componentes, como las pruebas de valores regex, las constantes o los filtros.
+- views: para que el proyecto sea más rápido de leer, separé los componentes que se enrutaron y los puse en esta carpeta. Los componentes que se enrutan para mí son más que un componente, ya que representan páginas y tienen rutas, las puse en "vistas" y cuando revisas una página vas a esta carpeta.
+
 
