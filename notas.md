@@ -212,7 +212,7 @@ watch: {
 }
 ```
 ```javascript
-// Usar variables de entorno
+// Usar variables de entorno, editadas desde webpack
 // http-server
 data () {
   return {
@@ -239,6 +239,7 @@ Vue.config.performance = true
 - [vue-test-utils](https://vue-test-utils.vuejs.org/)
 - [Mocking Vuex in Vue unit tests](https://medium.com/@lachlanmiller_52885/mocking-vuex-in-vue-unit-tests-b6eda1c4d301)
 - [Vue Unit Test Performance Comparison](https://github.com/eddyerburgh/vue-unit-test-perf-comparison)
+- [AVA](https://github.com/avajs/ava) Testing en paralelo por core
 
 ### [Nightwatch and e2e](https://gist.github.com/Igogrek/58046e1dda1638012299129bd0ae4ffd#nightwatch-and-e2e)
 Limpiar las URL, evita problemas en linux
