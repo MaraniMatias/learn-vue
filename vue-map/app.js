@@ -1,3 +1,4 @@
+"use strict";
 Vue.config.productionTip = true;
 var vm = new Vue({
   el: '#app',
@@ -227,7 +228,7 @@ var vm = new Vue({
       {
         id: 2,
         name: 'Agregados resistemente',
-        active: false,
+        active: true,
         features: []
       }
     ],
@@ -289,7 +290,8 @@ var vm = new Vue({
         coords: [this.locationSelect.lat, this.locationSelect.lng],
       });
       this.initLayers();
+      // this.layers[2].active = true;
       this.layerChanged(2, true);
     }
-  },
+  }
 });

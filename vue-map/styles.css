@@ -1,3 +1,7 @@
+[v-cloak] {
+  display: none;
+}
+
 .map {
   height: 600px;
 }
