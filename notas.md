@@ -191,6 +191,9 @@ Los módulos son piezas de código reutilizable que pueden implementarse donde y
 [cli.vuejs.org](https://cli.vuejs.org/)
 
 [Axios](https://github.com/axios/axios)
+
+`Webpack` tiene debserve para definir proxy 'api/*' redirigir a 'loaclhost:3000'
+
 ```javascript
 // Poder usar this.$http
 Vue.prototype.$http = axios
@@ -303,6 +306,8 @@ Usar propiedades computadas en lugar de hacer cálculos en {{}} y estas propieda
 (test, legibilidad).
 
 # Angular vs React vs Vue
+
+## [7 razones para migrar su aplicación AngularJS a VueJS](https://medium.com/@zleight1/7-reasons-to-migrate-your-angularjs-app-to-vuejs-183da9d30cc9)
 
 ## [Angular vs. React vs. Vue: A 2017 comparison](https://medium.com/unicorn-supplies/angular-vs-react-vs-vue-a-2017-comparison-c5c52d620176)
 
@@ -960,4 +965,6 @@ Algunos detalles sobre cada una de estas carpetas:
 - utils (opcional) : funciones que uso en algunos componentes, como las pruebas de valores regex, las constantes o los filtros.
 - views: para que el proyecto sea más rápido de leer, separé los componentes que se enrutaron y los puse en esta carpeta. Los componentes que se enrutan para mí son más que un componente, ya que representan páginas y tienen rutas, las puse en "vistas" y cuando revisas una página vas a esta carpeta.
 
+## [Axios Lessons for VueJS Developers Ep. 2](https://medium.com/onlykiosk/axios-lessons-for-vuejs-developers-ep-2-e3ac33e8520c)
 
+> Alguna configuracion util de saber
