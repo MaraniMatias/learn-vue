@@ -26,6 +26,10 @@
 - Cargar listas a demanda
 
 # Por leer o interesantes para leer
+* [Unlock performance tracing in Vue](https://medium.com/@brockreece/unlock-performance-tracing-in-vue-3b2c8f619cdc)
+* [VueJS Route Security and Authentication](https://m.serversideup.net/vuejs-route-security-and-authentication-a5a8d49b42f7)
+* [Learn how to use the Vue.js CLI](https://medium.freecodecamp.org/learn-how-to-use-the-vue-js-cli-8349fb23a566)
+
 > [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 > [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
@@ -236,14 +240,17 @@ Vue.config.performance = true
 ```
 
 ## Test
-- [Jest](https://facebook.github.io/jest/en/) jest --coverage
-- [simple-unit-tests-with-vue-test-utils-and-jest](https://medium.freecodecamp.org/simple-unit-tests-with-vue-test-utils-and-jest-c384d7abc321)
-- [Unit Testing Vue Components](https://vuejs.org/v2/cookbook/unit-testing-vue-components.html)
-- [vue-test-utils](https://vue-test-utils.vuejs.org/)
-- [Mocking Vuex in Vue unit tests](https://medium.com/@lachlanmiller_52885/mocking-vuex-in-vue-unit-tests-b6eda1c4d301)
-- [Vue Unit Test Performance Comparison](https://github.com/eddyerburgh/vue-unit-test-perf-comparison)
-- [AVA](https://github.com/avajs/ava) Testing en paralelo por core
-- [Unit testing with Vue — Approach, tips, and tricks — Part 2](https://medium.com/pixelmatters/unit-testing-with-vue-approach-tips-and-tricks-part-2-61abc10b2d33)
+* [Jest](https://facebook.github.io/jest/en/) jest --coverage
+* [simple-unit-tests-with-vue-test-utils-and-jest](https://medium.freecodecamp.org/simple-unit-tests-with-vue-test-utils-and-jest-c384d7abc321)
+* [Unit Testing Vue Components](https://vuejs.org/v2/cookbook/unit-testing-vue-components.html)
+* [vue-test-utils](https://vue-test-utils.vuejs.org/)
+* [Mocking Vuex in Vue unit tests](https://medium.com/@lachlanmiller_52885/mocking-vuex-in-vue-unit-tests-b6eda1c4d301)
+* [Vue Unit Test Performance Comparison](https://github.com/eddyerburgh/vue-unit-test-perf-comparison)
+* [AVA](https://github.com/avajs/ava) Testing en paralelo por core
+
+Para leer
+* [Unit testing with Vue — Approach, tips, and tricks — Part 2](https://medium.com/pixelmatters/unit-testing-with-vue-approach-tips-and-tricks-part-2-61abc10b2d33)
+* [End-To-End Testing A VueJS HackerNews Clone](https://medium.com/js-dojo/end-to-end-testing-a-vuejs-hackernews-clone-23b9415fd5c5)
 
 ### [Nightwatch and e2e](https://gist.github.com/Igogrek/58046e1dda1638012299129bd0ae4ffd#nightwatch-and-e2e)
 Limpiar las URL, evita problemas en linux
