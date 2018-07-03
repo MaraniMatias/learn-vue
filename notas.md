@@ -29,6 +29,7 @@
 * [Unlock performance tracing in Vue](https://medium.com/@brockreece/unlock-performance-tracing-in-vue-3b2c8f619cdc)
 * [VueJS Route Security and Authentication](https://m.serversideup.net/vuejs-route-security-and-authentication-a5a8d49b42f7)
 * [Learn how to use the Vue.js CLI](https://medium.freecodecamp.org/learn-how-to-use-the-vue-js-cli-8349fb23a566)
+* [Google Analytics, GDPR and Vuejs](https://medium.com/dailyjs/google-analytics-gdpr-and-vuejs-e1bd6affd2b4)
 
 > [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 > [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
