@@ -1,4 +1,4 @@
-# Curso
+# Idea para un curso de Vue
 
 - ¿Que es vue y  como nacio?
   - https://012.vuejs.org/images/mvvm.png
@@ -339,7 +339,7 @@ Usar propiedades computadas en lugar de hacer cálculos en {{}} y estas propieda
 
 > Historia 1.1, leer para tener idea
 
-Vue es utilizado por Alibaba, Baidu, Expedia, Nintendo, GitLab
+Vue es utilizado por Alibaba, Baidu, Expedia, Nintendo, GitLab, Xiaomi, WizzAir, EuroNews, Grammarly, Laracasts, Adobe, Behance, Codeship, Reuters.
 React es utilizado por facebook (algunas cosas), netfix
 Angular es utilizado por ¿google? (muy poco)
 
@@ -443,7 +443,7 @@ Cuando se trata de depuración, es una ventaja que React y Vue tengan menos magi
 - Si no puede decidir, primero aprenda React , luego Vue , luego Angular .
 
 ## [Why we moved from Angular 2 to Vue.js (and why we didn’t choose React)](https://medium.com/reverdev/why-we-moved-from-angular-2-to-vue-js-and-why-we-didnt-choose-react-ef807d9f4163)
-> Leer todo, aca un resume
+> Leer todo, acá un resume
 
 Antes de continuar, admito que Angular 2 beta 9 es un producto diferente de Angular 2.0, pero ese fue exactamente uno de los problemas. De beta9 a 2.0.0 hay 8 versiones beta, 8 RC y la versión 2.0.0, 17 versiones para actualizar en total. Intentamos actualizar de la versión beta 9 a la 2.0.0, pero se rompieron demasiadas cosas que hicieron que la actualización no fuera trivial. Además, casi al mismo tiempo que estábamos cuestionando a Angular 2 como nuestro marco de referencia, el equipo Angular decidió comenzar a trabajar en Angular 4. Si bien prometieron que no sería demasiado drástico, eso significaba que para cuando termináramos de actualizar a Angular 2.0.0 íbamos a necesitar otra actualización. Qué pérdida de tiempo y recursos limitados.
 
