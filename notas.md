@@ -943,6 +943,7 @@ npm install geckodriver -D
 ```
 ## [How to Structure a Vue.js Project](https://itnext.io/how-to-structure-a-vue-js-project-29e4ddc1aeeb)
 
+```bash
 .
 ├── app.css
 ├── App.vue
@@ -966,6 +967,7 @@ npm install geckodriver -D
 │   └── ...
 └── views
     └── ...
+```
 
 Algunos detalles sobre cada una de estas carpetas:
 
