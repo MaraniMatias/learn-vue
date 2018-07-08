@@ -32,6 +32,8 @@
 * [Google Analytics, GDPR and Vuejs](https://medium.com/dailyjs/google-analytics-gdpr-and-vuejs-e1bd6affd2b4)
 * [Managing State in Vue.js](https://medium.com/fullstackio/managing-state-in-vue-js-23a0352b1c87)
 * [Add i18n and manage translations of a Vue.js powered website](https://medium.com/hypefactors/add-i18n-and-manage-translations-of-a-vue-js-powered-website-73b4511ca69c)
+* [Mixins and Plugins in VueJS](https://medium.com/@denny.headrick/mixins-and-plugins-in-vuejs-ecee9b37d1bd)
+* [Understand Routing in Vue.js With Examples](https://medium.com/@saidhayani/understand-routing-in-vue-js-with-examples-6da96979c8e3)
 
 > [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 > [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
