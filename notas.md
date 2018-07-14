@@ -321,6 +321,313 @@ Lo mas importante `MyComponet.vue`, poder usar `<Mycomponte/>`.
 Usar propiedades computadas en lugar de hacer cálculos en {{}} y estas propiedades ser minimalists
 (test, legibilidad).
 
+# [react-vs-vue-vs-angular](https://medium.com/fundbox-engineering/react-vs-vue-vs-angular-163f1ae7be56)
+
+## Angular
+
+Angular se ha descartado al principio de nuestro proceso debido a dos razones principales (un razonamiento más detallado se puede leer aquí bajo "¿Por qué moverse entonces?" ):
+
+1. Angular es nuestro marco actual, estamos en v1.
+  Angualr v2 se introdujo con muchas mejoras, pero no era compatible con versiones anteriores.
+  Eso significa que actualizar a la última versión de Angular requiere esfuerzos similares como cambiar a cualquier otro marco.
+  Como resultado, la motivación para usar Angular ha disminuido considerablemente, dentro de Fundbox y en la industria en general, ya que los desarrolladores se sintieron decepcionados.
+
+2. Angular se convirtió en un gran marco que puede ser útil para construir sistemas complejos, pero es menos útil para la creación de interfaces de usuario de cambio rápido.
+  React y Vue son más livianos, y los componentes están diseñados para ser pequeños, autónomos, encapsulados, por lo tanto, fácilmente reutilizables.
+  Si tuviéramos que desarrollar una nueva infraestructura desde cero (y no tener que migrar de una existente), podríamos haber estado considerando Angular también.
+  En nuestro caso, no encajaba.
+
+## Preguntas
+
+* Curva de aprendizaje
+    ¿Qué tan fácil es un marco de trabajo para un desarrollador experimentado?
+* Estilo de código
+    ¿Qué tan legible e intuitivo es el código y las convenciones del marco?
+* Componentes de un solo archivo
+    ¿Qué tan intuitivo es navegar y mantener un componente en el marco?
+* Actuación
+    ¿Qué tan efectivas son las aplicaciones creadas con el marco?
+    ¿Qué tan grande es la huella del marco en relación con el tamaño del paquete y el uso de la memoria?
+* Flexibilidad
+    ¿Cuántas características ofrece el marco desde el primer momento?
+    ¿Cuántas de sus características son obligatorias?
+    ¿Qué tan fácil es personalizar el marco?
+* Estampación
+    ¿Qué herramientas están disponibles para el framework?
+    ¿Cuántos complementos estables hay para el marco?
+* Móvil
+    ¿El marco admite más aplicaciones además de la web?
+    ¿Ofrece una forma de crear aplicaciones móviles nativas?
+* Comunidad
+    ¿Qué tan grande es la comunidad del marco?
+    ¿La comunidad está unida o fragmentada?
+* Madurez
+    ¿Qué tan maduro es el marco?
+    ¿Cuánto tiempo ha estado probado en producción?
+    ¿Qué tan claro es su futuro?
+* Apoyo
+    ¿Qué tan grande es el equipo detrás del marco?
+    ¿Hay una empresa u organización propietaria del marco?
+* Contratación de talento
+    ¿Qué tan fácil sería contratar desarrolladores con experiencia previa en el marco?
+
+## Comparando Reacciona y Vue
+
+### React
+
+La documentación oficial de React ofrece un par de guías básicas que están decentemente escritas y ofrecen un recorrido digno para los recién llegados.
+Los principios básicos del marco se pueden entender en un par de horas, por los desarrolladores con experiencia en el marco del front-end.
+
+La documentación oficial de React es completa, pero no tan clara y organizada como la documentación oficial de Vue.
+La documentación cubre los flujos felices necesarios y algo más, pero todavía hay bordes del marco que faltan en la documentación.
+Estos bordes pueden convertirse en puntos de dolor a medida que el proyecto crezca.
+
+Reaccionar no es un marco completo ; es delgado en su núcleo y los componentes del marco más avanzados deben buscarse como un paquete de terceros.
+Esto agrega cierta complejidad a la curva de aprendizaje, ya que difiere en función de las elecciones que realice con el marco en el camino.
+
+### Vue
+
+La biblioteca Vue simplemente se puede cargar como un recurso de una página HTML; a través de esto, toda la biblioteca se puede usar sin un paso de compilación en solo minutos.
+Esto refleja cuán discreta es la biblioteca en general, y también permite escribir aplicaciones Vue en un momento.
+
+Debido a que Vue comparte algunos conceptos con React y Angular, los desarrolladores en transición tendrán una curva de aprendizaje aún más fácil en Vue.
+También ayuda el hecho de que la documentación oficial de Vue está muy bien escrita, y cubre todo lo que un desarrollador podría encontrar al desarrollar aplicaciones Vue.
+
+Vue está más estrechamente definido que React; eso también significa que es más obstinado.
+Es notable que en Vue muchas preguntas se responden directamente en la documentación misma, sin necesidad de buscar demasiado en otros lugares.
+
+## Estilo de código
+
+### React
+
+React introdujo un conjunto de conceptos basados en la programación funcional que facilita el proceso de desarrollo de aplicaciones para UI.
+
+El más notable es:
+
+1. JSX, que es una forma de escribir HTML dentro del código JavaScript. JSX viene como un complemento para React ser un fuerte promotor de la Programación Funcional, y en ese ámbito, tiene un excelente sentido.
+2. Su Component Lifecycle ofrece una forma intuitiva de conectarse a eventos específicos en la "vida" de un componente (creación, actualizaciones, etc.)
+
+### Vue
+
+Siendo un marco más joven que React y Angular, Vue tomó las mejores cosas de cada una, una combinación de programación funcional y OO.
+
+Por defecto, el estilo de codificación de Vue es un poco similar en algunas áreas a Angular, pero también elimina la mayoría de los puntos de dolor de Angular.
+Vue separa HTML, JS y CSS, como los desarrolladores web han estado acostumbrados durante años, pero también permite usar JSX si prefiere ese estilo.
+Por lo tanto, no obliga a cambiar su estilo de código.
+
+El enfoque de Vue en el ciclo de vida de los componentes es más directo e intuitivo que el de React.
+En general, la API de Vue es más amplia pero más simple que React.
+
+## Componentes de un solo archivo
+
+### React
+
+Con JSX, Single File Components en React está escrito completamente como un módulo de JavaScript, por lo que significa que React tiene una forma específica de escribir HTML, CSS y JavaScript.
+
+Escribir todo en JavaScript es más una característica, y no un error, porque se trata de aliviar la carga de crear componentes dinámicos dentro de HTML.
+En cambio, uno puede usar JavaScript simple para generar plantillas cuando usa JSX.
+
+Dicho esto, la sintaxis especial de React requiere más aprendizaje y práctica para sentirse cómodo con la escritura de componentes en React.
+
+### Vue
+
+Los componentes de un solo archivo en Vue se dividen en tres partes separadas: <plantilla>, <secuencia de comandos> y <estilo>, y cada uno contiene el tipo de código correspondiente, por lo que se siente más natural para la transición de los desarrolladores web.
+
+Como marco progresivo, Vue es fácilmente personalizable. Por ejemplo, con una sola configuración, uno puede usar JSX en lugar de la etiqueta <plantilla>.
+Además, como otro ejemplo, simplemente agregando un atributo lang = "scss" a la etiqueta <style>, se puede escribir SCSS en lugar de CSS simple.
+De forma similar, al agregar el atributo de ámbito a la etiqueta <style>, los componentes de Vue implementarán el alcance de CSS (también conocido como Módulos CSS) de inmediato.
+
+## Actuación
+
+### React
+
+Tamaño de la biblioteca (en la red / sin comprimir): 32.5KB / 101.2KB
+
+Comparando las manipulaciones de DOM, el rendimiento general de React es excelente. Es mucho más rápido que Angular (v1) pero es un poco más lento que Vue.
+
+React ofrece soporte para la Representación del lado del servidor (SSR) al instante, y podría resultar útil para algunos tipos de implementaciones.
+
+Soporte integrado para paquetes y agitación de árboles para minimizar la carga de recursos del usuario final.
+
+### Vue
+
+Tamaño de la biblioteca (en la red / sin comprimir): 31 KB / 84,4 KB
+
+Además de ser el más rápido del grupo, Vue también es un marco progresivo, se construye desde cero y se puede adoptar incrementalmente.
+La biblioteca central se centra solo en la capa de visualización y es fácil de seleccionar e integrar con otras bibliotecas o proyectos existentes.
+
+De forma similar a React, Vue tiene soporte integrado para paquetes y agitación de árboles para minimizar la carga de recursos del usuario final.
+
+![Vue vs React](https://cdn-images-1.medium.com/max/1600/0*fJ8FOJg3GnnX_GOE)
+
+Mas cerca de 1 es como usar JavaScript puro, es decir mejor rendimiento
+
+## Flexibilidad
+
+### React
+
+Reacciona se centra en la interfaz de usuario, por lo que lo esencial que obtienes es su soporte para la construcción de componentes orientados al usuario.
+
+Lo que no ofrece como parte de la biblioteca oficial de React es funciones más avanzadas como administración estatal.
+La mayoría de las aplicaciones de React utilizan Redux para la administración estatal, y en estos días MobX está ganando tracción también como un compañero de React.
+
+Incluso el enrutador React no es un paquete oficial, sino un paquete de terceros, respaldado por el equipo de React.
+
+### Vue
+
+Como marco progresivo, Vue solo permite utilizar sus funciones más fundamentales para crear una aplicación, pero si es necesario, también ofrece la mayoría de lo que necesita: Vuex para administración estatal, Vue Router para administración de URL de aplicación, Vue Server- Renderizador lateral para la representación del lado del servidor.
+
+Vue es más obstinado que React, para lo bueno y lo malo.
+
+## Estampación
+
+### React
+
+React tiene una herramienta CLI de terceros llamada create-react-app que ayuda a andamiar nuevas aplicaciones y componentes en un proyecto React.
+
+La herramienta CLI también admite la capacidad de ejecutar pruebas de extremo a extremo y de unidades, deshielo de código y el servidor de desarrollo local.
+
+React tiene un gran apoyo oficial y comunitario para los principales IDEs.
+
+### Vue
+
+Vue tiene una herramienta CLI oficial llamada Vue CLI. De forma muy similar a la aplicación de creación y reacción de React, la herramienta Vue CLI ofrece andamios de nuevas aplicaciones.
+
+También Vue tiene un buen soporte para todos los IDEs significativos (no tan buenos como React, pero WebStorm y VSCode están ahí).
+
+## Móvil
+
+### React
+
+React tiene un puerto para construir aplicaciones móviles nativas, se llama React Native, y es el líder actual de la solución "escribir una vez (en JavaScript), usar muchas (en iOS nativo y Android)" que hay hoy.
+
+Hay una gran cantidad de aplicaciones en producción creadas con React Native.
+
+### Vue
+
+Para Vue, hay más que una sola opción para crear aplicaciones Mobile Native.
+Aunque, a diferencia de React Native, no hay un líder claro en el espacio Vue-Mobile-Native.
+
+NativeScript es el líder de estas opciones (y también es una solución líder para Angular btw), pero también hay Weex y Quasar .
+
+## Comunidad
+
+### React
+
+En StackOverflow, hay casi 88,000 preguntas etiquetadas con #reactjs
+Hay más de 40,000 paquetes de npm disponibles para instalar para los desarrolladores de React.
+
+En las últimas encuestas de herramientas de front-end, más del 40% de los encuestados votaron que se sienten cómodos usando React.
+
+En GitHub, Repo de React tiene casi 100,000 estrellas.
+
+La comunidad de React es de hecho mucho más importante pero tiene la desventaja de ser más fragmentada que la de Vue, y es más difícil encontrar respuestas directas a problemas comunes.
+
+### Vue
+
+En StackOverflow, hay 18,000 preguntas etiquetadas con #vue
+Para Vue, hay casi 10,000 paquetes de npm disponibles para instalar.
+
+En las últimas encuestas, el 17% de los encuestados votaron que se sienten cómodos usando Vue.
+Pero, de hecho, el doble de desarrolladores están interesados en aprender Vue, en comparación con React, por lo que el mercado de los desarrolladores de Vue probablemente crecerá más rápido que el de React en el futuro.
+
+El Repo Vue en GitHub acaba de pasar React y superó las 100.000 estrellas.
+
+Gracias a su excelente documentación, la mayoría de las respuestas a los problemas en el desarrollo de Vue se pueden encontrar en la documentación de inmediato, pero también las respuestas de la comunidad están más alineadas.
+
+## Madurez
+
+## React
+
+React fue lanzado en marzo de 2013 (5 años de edad en el momento de la escritura).
+
+Según SimilarTech, React está en uso en 205,000 dominios únicos. Creciendo a 2.46% por mes.
+
+React está muy bien probado en producción, más que Vue. React ha construido una vasta comunidad, lo que tiene sentido con un propietario como Facebook.
+
+### Vue
+
+Vue fue lanzado en febrero de 2014 (4 años de edad al momento de escribirlo).
+
+Según SimilarTech, Vue está en uso en 26,000 dominios únicos. Creciendo a 3.34% por mes.
+
+Vue se convirtió en un estándar hace un año y medio. Hoy en día es ampliamente utilizado, también en algunas compañías más grandes como GitLab, Alibaba, Baidu y más. Vue demostró ser estable tanto en tiempo de ejecución como con actualizaciones.
+
+
+## Apoyo
+
+### React
+
+React es un framework fundado y mantenido por Facebook. En Facebook, hay un equipo que regularmente apoya React (y React también se usa para muchos proyectos dentro de Facebook).
+
+Se dice que el tamaño del equipo React en Facebook incluye 10 desarrolladores dedicados. Pero debe tenerse en cuenta que varios equipos de Facebook R & D están utilizando React para proyectos internos y externos, y cada uno de ellos puede enviar solicitudes de cambio a la biblioteca.
+
+### Vue
+
+Vue es una biblioteca independiente, fundada por Evan You. También se encarga del mantenimiento de Vue y su hoja de ruta.
+
+El tamaño del equipo Vue incluye 23 desarrolladores dedicados.
+
+## Contratación de talento
+
+### React
+
+Siendo el marco más popular en estos días, React tiene una ventaja si estás en el mercado para desarrolladores de React.
+
+Además, al aprender React, los desarrolladores obtendrán una línea de valor inmediato para su CV, ya que obtendrán una valiosa experiencia con un marco popular como React.
+
+### Vue
+
+Vue es el nuevo "hotness" en la industria front-end.
+Por supuesto, el bombo también tiene algunas desventajas, pero Vue ha estado ganando tracción estable durante mucho tiempo y los desarrolladores están ansiosos por tener en sus manos un proyecto Vue como parte de su FOMO .
+En estos días, no es raro encontrar desarrolladores que tengan alguna experiencia con Vue.
+
+##  Pros general
+
+### React
+* Estándar en la industria.
+* Skilling FED con el framework más popular que existe.
+* Contratación más fácil de FED fuertes.
+* Un futuro y una estabilidad más seguros, basados en un pasado estable y una sólida compañía de respaldo.
+* Comunidad más significativa, una gran cantidad de herramientas y paquetes.
+* Las aplicaciones web y móviles pueden compartir algunos códigos.
+
+> Creo qeu algunas las comparte con Vue
+
+### Vue
+
+* Los módulos centrales de Vue (Vuex, Router, etc.) están incorporados y funcionan de manera fantástica.
+* Elegir la cosa "siguiente", y no la "corriente".
+* Ser más único; liderando la manada y no siguiéndola.
+* Fase de aceleración mucho más rápida, tanto FED como BED se sentirían naturales en el código Vue, rápido.
+* Promueve mejor la cultura Full-Stack; permite el desarrollo de productos cruzados.
+
+# Contras generales
+
+## React
+
+* Manteniendo la división entre FEDs y BEDs; Reaccionar requiere aprender mucho para convertirse en un experto.
+* Requeriría mucho más tiempo para entrenar a los desarrolladores.
+* Entregar más despacio (al menos para el levantamiento pesado inicial).
+
+## Vue
+
+* Caminando en un terreno más experimental, no arriesgado, pero nervioso.
+* Más difíciles de encontrar experimentados desarrolladores de Vue.
+* Menos complementos y herramientas disponibles, comunidad más pequeña.
+* Al no React, los desarrolladores no adquieren experiencia con el marco más popular hoy en día.
+
+## Más pensamientos
+
+Durante mucho tiempo React y Angular fueron los principales jugadores en el juego de framework, mientras que muchos (¡muchos!) Frameworks aparecían día por medio tratando de entrar al salón de la fama también. Ninguno tuvo éxito; excepto últimamente - Vue. La apreciación más evidente y la popularidad que Vue ha atraído se puede ver en referencias en artículos, tutoriales, POC y comunidades de desarrolladores de navegadores.
+
+React es un iniciador de tendencias y una habilidad altamente demandada en la industria. React es un líder claro hoy en día, tanto en la publicidad de la industria como en la publicidad. Es súper popular y, para ser honesto, merece el estado muy bien.
+Reacciona hace que sea fácil construir aplicaciones web y móviles complejas y sencillas, pero viene con una complejidad de precios y marcos. Los conceptos básicos son relativamente intuitivos, pero los proyectos grandes de React tienden a complicarse y la fragmentación en la comunidad no ayuda. El hecho de que React haya introducido muchos nuevos paradigmas tiene un efecto negativo en su curva de aprendizaje.
+
+Vue es un marco más sencillo, sencillo y fresco que merece un lugar en el podio por ser súper simple de aprender, muy bajo en el código repetitivo, de rendimiento, flexible y completo. Muchas aplicaciones web hoy en día, podrían haberse construido más rápido con Vue que con React. Es divertido desarrollar Vue y es bastante sencillo.
+
+Las buenas vibraciones que crecen constantemente alrededor de Vue dentro de la comunidad de front-end últimamente, pueden fácilmente hacer alusión a que Vue se volverá al menos tan popular como React muy pronto.
+
 # Angular vs React vs Vue
 
 ## [7 razones para migrar su aplicación AngularJS a VueJS](https://medium.com/@zleight1/7-reasons-to-migrate-your-angularjs-app-to-vuejs-183da9d30cc9)
