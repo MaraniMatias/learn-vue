@@ -26,7 +26,6 @@
 - Cargar listas a demanda
 
 # Por leer o interesantes para leer
-* [Unlock performance tracing in Vue](https://medium.com/@brockreece/unlock-performance-tracing-in-vue-3b2c8f619cdc)
 * [VueJS Route Security and Authentication](https://m.serversideup.net/vuejs-route-security-and-authentication-a5a8d49b42f7)
 * [Learn how to use the Vue.js CLI](https://medium.freecodecamp.org/learn-how-to-use-the-vue-js-cli-8349fb23a566)
 * [Google Analytics, GDPR and Vuejs](https://medium.com/dailyjs/google-analytics-gdpr-and-vuejs-e1bd6affd2b4)
@@ -34,6 +33,7 @@
 * [Add i18n and manage translations of a Vue.js powered website](https://medium.com/hypefactors/add-i18n-and-manage-translations-of-a-vue-js-powered-website-73b4511ca69c)
 * [Mixins and Plugins in VueJS](https://medium.com/@denny.headrick/mixins-and-plugins-in-vuejs-ecee9b37d1bd)
 * [Understand Routing in Vue.js With Examples](https://medium.com/@saidhayani/understand-routing-in-vue-js-with-examples-6da96979c8e3)
+* [Building a Real-World Web App With Vue.js and Firebase](https://savvyapps.com/blog/definitive-guide-building-web-app-vuejs-firebase?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more)
 
 > [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 > [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
@@ -111,7 +111,7 @@
 
 ## [The Vue architecture that worked for me. (in small and large apps)](https://medium.com/@ederng/the-vue-architecture-that-worked-for-me-in-small-and-large-apps-9b253cf92951)
 
-### ¿Por qué Vue.js? [Building a Real-World Web App With Vue.js and Firebase](https://savvyapps.com/blog/definitive-guide-building-web-app-vuejs-firebase?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more)
+### ¿Por qué Vue.js?
 
 - La creciente popularidad de Vue.js no puede ser subestimada.
 - Lo preferimos porque es liviano, modular y requiere una configuración mínima.
