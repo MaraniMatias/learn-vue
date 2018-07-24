@@ -109,7 +109,7 @@
 
 # General
 
-## tips
+## Tips
 
 ### 1.- Componentes
 
@@ -312,7 +312,7 @@ Lib
 
 Lo mas importante `MyComponet.vue`, poder usar `<Mycomponte/>`.
 
-Usar propiedades computadas en lugar de hacer cálculos en {{}} y estas propiedades ser minimalists
+Usar propiedades computadas en lugar de hacer cálculos en {{}} y estas propiedades ser minimalistas
 (test, legibilidad).
 
 ----
@@ -376,7 +376,7 @@ Angular se ha descartado al principio de nuestro proceso debido a dos razones pr
 * Contratación de talento
     ¿Qué tan fácil sería contratar desarrolladores con experiencia previa en el marco?
 
-## Comparando Reacciona y Vue
+## Comparando React y Vue
 
 ### React
 
@@ -513,7 +513,7 @@ Hay una gran cantidad de aplicaciones en producción creadas con React Native.
 Para Vue, hay más que una sola opción para crear aplicaciones Mobile Native.
 Aunque, a diferencia de React Native, no hay un líder claro en el espacio Vue-Mobile-Native.
 
-NativeScript es el líder de estas opciones (y también es una solución líder para Angular btw), pero también hay Weex y Quasar .
+NativeScript es el líder de estas opciones (y también es una solución líder para Angular), pero también hay Weex y Quasar .
 
 ## Comunidad
 
@@ -764,7 +764,9 @@ Antes de continuar, admito que Angular 2 beta 9 es un producto diferente de Angu
 
 Lo principal que no nos gustó y todavía no nos gusta sobre Angular 2 es Typescript. Sé que Angular 2 se puede usar con Javascript, pero una vez más, la decisión de usar Typescript ya se tomó y, según tengo entendido, usar Javascript puro con Angular 2 no es la manera ideal en que debería usar Angular 2. En cualquier caso, deshacerse de Typescript significaba una reescritura completa del proyecto.
 
-No sentí que Typescript agregara un valor sustancial y, lo que es peor, notamos que nuestra velocidad de codificación se redujo. Con Typescript las cosas que eran realmente fáciles de hacer en Javascript, como definir un objeto simple, eran más complicadas de hacer en Typescript. Le recomiendo que lea los siguientes artículos antes de comenzar a utilizar Typescript. No es la solución correcta para todos.
+No sentí que Typescript agregara un valor sustancial y, lo que es peor, notamos que nuestra velocidad de codificación se redujo.
+Con Typescript las cosas que eran realmente fáciles de hacer en Javascript, como definir un objeto simple, eran más complicadas de hacer en Typescript.
+No es la solución correcta para todos.
 
 ### React
 
@@ -791,7 +793,8 @@ Primero comenzamos a definir cuáles iban a ser nuestros puntos de decisión. Sa
 * Reactividad
 * Componente basado
 
-Después de decidir nuestros puntos de decisión, tuve que ensuciarme las manos, así que le di a React y Vue.js un par de días cada uno para revisar cada punto de decisión que Google no iba a responder. Como no sabía nada de ninguno de ellos, al final de dos días reevalué lo lejos que llegué a reescribir algunas partes del proyecto real que íbamos a migrar.
+Después de decidir nuestros puntos de decisión, tuve que ensuciarme las manos, así que le di a React y Vue.js un par de días cada uno para revisar cada punto de decisión que Google no iba a responder.
+Como no sabía nada de ninguno de ellos, al final de dos días reevalué lo lejos que llegué a reescribir algunas partes del proyecto real que íbamos a migrar.
 
 Las partes que elegí reescribir fueron:
 
@@ -801,9 +804,12 @@ Las partes que elegí reescribir fueron:
 * Formularios de inicio de sesión y algunos formularios de contenido
 * Un modo de arranque
 
-Me sorprendió lo lejos que llegué con Vue.js, en un par de días tuve una prueba de concepto para mostrar al resto del equipo y a mi CTO. Obtuve una buena comprensión de los conceptos básicos de Vue.js, definí una arquitectura buena y extensible pero, lo más importante, disfruté mucho la experiencia de escribir código con ella y sentí que lo hacía más rápido que con React.
+Me sorprendió lo lejos que llegué con Vue.js, en un par de días tuve una prueba de concepto para mostrar al resto del equipo y a mi CTO.
+Obtuve una buena comprensión de los conceptos básicos de Vue.js, definí una arquitectura buena y extensible pero, lo más importante, disfruté mucho la experiencia de escribir código con ella y sentí que lo hacía más rápido que con React.
 
-React fue mucho más difícil de lo que pensaba, elegir entre Redux y MobX es más problemático que tener una opción que esté bien integrada con el framework como Vue.js y Vuex do. Esto es simple porque, al no tener experiencia con un marco, le da más confianza sabiendo que un marco tiene una biblioteca oficial para hacer algo. Por cierto, sentí que la reactividad era más fácil con Vuex que con Redux, pero probablemente sea solo una percepción, como todas las curvas de aprendizaje.
+React fue mucho más difícil de lo que pensaba, elegir entre Redux y MobX es más problemático que tener una opción que esté bien integrada con el framework como Vue.js y Vuex.
+Esto es simple porque, al no tener experiencia con un marco, le da más confianza sabiendo que un marco tiene una biblioteca oficial para hacer algo.
+Por cierto, sentí que la reactividad era más fácil con Vuex que con Redux, pero probablemente sea solo una percepción, como todas las curvas de aprendizaje.
 
 JSX también era un problema ya que no podíamos reutilizar el código HTML y Vue.js nos permitió hacerlo en cierta medida. Los archivos Vue son realmente buenos para trabajar, ya que no me gustan las plantillas en línea. React mezcla tanto JSX / HTML con código JS que simplemente no me gusta, ya que creo firmemente en la separación de las preocupaciones y se ve feo en mi humilde opinión.
 
