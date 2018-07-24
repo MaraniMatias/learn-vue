@@ -109,14 +109,7 @@
 
 # General
 
-## [The Vue architecture that worked for me. (in small and large apps)](https://medium.com/@ederng/the-vue-architecture-that-worked-for-me-in-small-and-large-apps-9b253cf92951)
-
-### ¿Por qué Vue.js?
-
-- La creciente popularidad de Vue.js no puede ser subestimada.
-- Lo preferimos porque es liviano, modular y requiere una configuración mínima.
-- También es extremadamente rápido y tiene un tamaño de archivo bajo.
-- Los desarrolladores pueden colocarlo fácilmente en cualquier proyecto o marco existente.
+## tips
 
 ### 1.- Componentes
 
@@ -197,6 +190,7 @@ Los módulos son piezas de código reutilizable que pueden implementarse donde y
 
 ## Más tips
 > Si quires incorporar Vue componentes en AngularJs [ngVue](https://github.com/ngVue/ngVue)
+
 [cli.vuejs.org](https://cli.vuejs.org/)
 
 [Axios](https://github.com/axios/axios)
@@ -320,6 +314,17 @@ Lo mas importante `MyComponet.vue`, poder usar `<Mycomponte/>`.
 
 Usar propiedades computadas en lugar de hacer cálculos en {{}} y estas propiedades ser minimalists
 (test, legibilidad).
+
+----
+
+# [The Vue architecture that worked for me. (in small and large apps)](https://medium.com/@ederng/the-vue-architecture-that-worked-for-me-in-small-and-large-apps-9b253cf92951)
+
+## ¿Por qué Vue.js?
+
+- La creciente popularidad de Vue.js no puede ser subestimada.
+- Lo preferimos porque es liviano, modular y requiere una configuración mínima.
+- También es extremadamente rápido y tiene un tamaño de archivo bajo.
+- Los desarrolladores pueden colocarlo fácilmente en cualquier proyecto o marco existente.
 
 # [react-vs-vue-vs-angular](https://medium.com/fundbox-engineering/react-vs-vue-vs-angular-163f1ae7be56)
 
