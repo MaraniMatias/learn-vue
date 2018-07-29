@@ -34,6 +34,7 @@
 * [Mixins and Plugins in VueJS](https://medium.com/@denny.headrick/mixins-and-plugins-in-vuejs-ecee9b37d1bd)
 * [Understand Routing in Vue.js With Examples](https://medium.com/@saidhayani/understand-routing-in-vue-js-with-examples-6da96979c8e3)
 * [Building a Real-World Web App With Vue.js and Firebase](https://savvyapps.com/blog/definitive-guide-building-web-app-vuejs-firebase?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more)
+* [How We Implemented High-load Website Interface with Vue.JS and Google Maps](https://expertise.jetruby.com/how-we-implemented-high-load-website-interface-with-vue-js-and-google-maps-5f9f9a7cd24a)
 
 > [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 > [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
