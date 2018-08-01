@@ -252,6 +252,7 @@ Para leer
 * [Unit testing with Vue — Approach, tips, and tricks — Part 2](https://medium.com/pixelmatters/unit-testing-with-vue-approach-tips-and-tricks-part-2-61abc10b2d33)
 * [End-To-End Testing A VueJS HackerNews Clone](https://medium.com/js-dojo/end-to-end-testing-a-vuejs-hackernews-clone-23b9415fd5c5)
 * [Unit testing Vuex actions with Jest mocks](https://codeburst.io/a-pattern-for-mocking-and-unit-testing-vuex-actions-8f6672bdb255)
+* [Unit Testing Vue-Router](https://medium.com/js-dojo/unit-testing-vue-router-1d091241312)
 
 ### [Nightwatch and e2e](https://gist.github.com/Igogrek/58046e1dda1638012299129bd0ae4ffd#nightwatch-and-e2e)
 Limpiar las URL, evita problemas en linux
