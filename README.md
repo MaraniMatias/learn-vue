@@ -1,8 +1,8 @@
 # learn-vue
 
-Aprender vuejs 2.5 material para la cátedra de TTADS, UTN-frro
+Aprender vuejs 2.5 material para la cátedra de TTADS, UTN-frro.
 
-Para ampliar los temas de esta guia sugiero ver la [documentación oficial de Vue](https://es-vuejs.github.io/vuejs.org/) o [en este repocitorio](https://github.com/MaraniMatias/vuejs-talk-2017)
+Para ampliar los temas de esta guia sugiero ver la [documentación oficial de Vue](https://es-vuejs.github.io/vuejs.org/) o [en este repositorio](https://github.com/MaraniMatias/vuejs-talk-2017).
 
 ## Requisitos previos
 
