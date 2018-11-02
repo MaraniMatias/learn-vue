@@ -24,6 +24,7 @@
   - [Vue Test Utils](https://github.com/vuejs/vue-test-utils/) y
   - e2e [nightwatch](http://nightwatchjs.org/)
 - Cargar listas a demanda
+- [Buenas practicas, nombres, extructura](https://github.com/CodePilotai/codepilot)
 
 # Por leer o interesantes para leer
 * [VueJS Route Security and Authentication](https://m.serversideup.net/vuejs-route-security-and-authentication-a5a8d49b42f7)
