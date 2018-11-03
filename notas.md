@@ -4,7 +4,7 @@
   - https://012.vuejs.org/images/mvvm.png
 - Vue simple (Ejemplo de la pagina de vue)
 - Vue proyecto simple
-  - [Vue cli](https://cli.vuejs.org/) v2 o v3
+  - [Vue cli](https://cli.vuejs.org/)
   - Explicar webpack, ES6 , babel, eslint, nodejs
   - Uso de [dotenv](https://github.com/motdotla/dotenv)
   - Archivos importantes :D, de la estructura
