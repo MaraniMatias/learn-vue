@@ -335,7 +335,7 @@ Usar propiedades computadas en lugar de hacer cálculos en {{}} y estas propieda
 - Los desarrolladores pueden colocarlo fácilmente en cualquier proyecto o marco existente.
 
 # [react-vs-vue-vs-angular](https://medium.com/fundbox-engineering/react-vs-vue-vs-angular-163f1ae7be56)
-
+<!--
 ## Angular
 
 Angular se ha descartado al principio de nuestro proceso debido a dos razones principales (un razonamiento más detallado se puede leer aquí bajo "¿Por qué moverse entonces?" ):
@@ -640,11 +640,11 @@ Reacciona hace que sea fácil construir aplicaciones web y móviles complejas y 
 Vue es un marco más sencillo, sencillo y fresco que merece un lugar en el podio por ser súper simple de aprender, muy bajo en el código repetitivo, de rendimiento, flexible y completo. Muchas aplicaciones web hoy en día, podrían haberse construido más rápido con Vue que con React. Es divertido desarrollar Vue y es bastante sencillo.
 
 Las buenas vibraciones que crecen constantemente alrededor de Vue dentro de la comunidad de front-end últimamente, pueden fácilmente hacer alusión a que Vue se volverá al menos tan popular como React muy pronto.
-
+-->
 # Angular vs React vs Vue
 
 ## [7 razones para migrar su aplicación AngularJS a VueJS](https://medium.com/@zleight1/7-reasons-to-migrate-your-angularjs-app-to-vuejs-183da9d30cc9)
-
+<!--
 ## [Angular vs. React vs. Vue: A 2017 comparison](https://medium.com/unicorn-supplies/angular-vs-react-vs-vue-a-2017-comparison-c5c52d620176)
 
 ¿Cuán maduros son los marcos / bibliotecas?
@@ -764,7 +764,8 @@ Cuando se trata de depuración, es una ventaja que React y Vue tengan menos magi
 - Si trabajas con diseñadores y necesitas archivos HTML limpios: Angular o Vue
 - Si te gusta Vue pero temes al ecosistema limitado: React
 - Si no puede decidir, primero aprenda React , luego Vue , luego Angular .
-
+-->
+<!--
 ## [Why we moved from Angular 2 to Vue.js (and why we didn’t choose React)](https://medium.com/reverdev/why-we-moved-from-angular-2-to-vue-js-and-why-we-didnt-choose-react-ef807d9f4163)
 > Leer todo, acá un resume
 
@@ -862,6 +863,7 @@ Valoramos la simplicidad y Vue.js logra eso, esta simplicidad se refleja en la c
 Rever ( www.reverscore.com ) es una plataforma en línea que permite a las empresas involucrar a todos sus empleados en la innovación de primera línea todos los días. Rever desmitifica la innovación y la convierte en un hábito diario para todos. Siempre estamos reclutando, si desea trabajar con un equipo de tecnología increíble, consulte nuestras oportunidades en https://reverscore.com/careers/
 
 Luis Elizondo es el Ingeniero Líder de Rever, donde hace el desarrollo Web de Backend y Frontend. También está a cargo de la automatización, infraestructura, arquitectura de sistemas y seguridad. Tiene más de 10 años de experiencia trabajando con múltiples lenguajes de programación, diseñando arquitecturas de aplicaciones, automatizando procesos y operaciones y administrando servidores en la nube.
+-->
 
 ## [Why 43% of Front-End Developers want to learn Vue.js](https://medium.com/vue-mastery/why-43-of-front-end-developers-want-to-learn-vue-js-7f23348bc5be)
 > leery ver, explica como hacer una page simple
@@ -878,12 +880,74 @@ Módulos en vuex
 Estructura
 ![Estructura vue y vuex](https://cdn-images-1.medium.com/max/1600/1*UtcKuaTf36yJspMKvttd5g.png)
 
-[vuex-feature-scoped-structure](https://github.com/igeligel/vuex-feature-scoped-structure)
-
-[vuex-namespaced-module-structure](https://github.com/igeligel/vuex-namespaced-module-structure)
-
-[vue-wordpress-pwa](https://github.com/bstavroulakis/vue-wordpress-pwa)
-
+Struct vue
+```
+.
+├── admin
+│   └── app.vue
+├── App.vue
+├── assets
+│   ├── fonts
+│   ├── images
+│   │   └── code.jpg
+│   └── stylesheets
+│       └── application.scss
+├── components
+│   ├── footerBar.vue
+│   ├── materials.vue
+│   └── navBar.vue
+├── packs
+│   └── application.js
+├── README.md
+├── router
+│   └── index.js
+├── store
+│   ├── index.js
+│   └── modules
+│       ├── board
+│       │   ├── actions.js
+│       │   ├── getters.js
+│       │   ├── index.js
+│       │   ├── mutations.js
+│       │   ├── mutation-types.js
+│       │   └── state.js
+│       ├── organization
+│       │   ├── actions.js
+│       │   ├── getters.js
+│       │   ├── index.js
+│       │   ├── mutations.js
+│       │   ├── mutation-types.js
+│       │   └── state.js
+│       └── team
+│           ├── actions.js
+│           ├── getters.js
+│           ├── index.js
+│           ├── mutations.js
+│           ├── mutation-types.js
+│           └── state.js
+├── utils
+└── views
+    ├── boards
+    │   ├── edit.vue
+    │   ├── index.vue
+    │   ├── new.vue
+    │   └── show.vue
+    ├── lists
+    ├── organizations
+    │   ├── edit.vue
+    │   ├── index.vue
+    │   ├── new.vue
+    │   └── show.vue
+    ├── pages
+    │   ├── home.vue
+    │   └── not_found.vue
+    └── teams
+        ├── edit.vue
+        ├── index.vue
+        ├── new.vue
+        └── show.vue
+```
+by [https://github.com/EnziinSystem/vue-template](https://github.com/EnziinSystem/vue-template)
 
 ## [Handpicked Learning Resources for VueJS](https://medium.com/gridbox/handpicked-learning-resources-for-vuejs-d49d17aba872)
 
