@@ -870,15 +870,15 @@ Luis Elizondo es el Ingeniero Líder de Rever, donde hace el desarrollo Web de B
 
 ## [Anyway, this is how to use v-model with Vuex. Computed setter in action](https://itnext.io/anyway-this-is-how-to-use-v-model-with-vuex-computed-setter-in-action-320eb682c976)
 
+Documentacion Official [https://vuex.vuejs.org/guide/forms.html#form-handling](https://vuex.vuejs.org/guide/forms.html#form-handling)
+
 ![imagen vue](https://cdn-images-1.medium.com/max/2000/1*h8v9HT2amuJPjLdh4HjqHw.png)
 
 ## [Large-scale Vuex application structures](https://medium.com/3yourmind/large-scale-vuex-application-structures-651e44863e2f)
 
 Módulos en vuex
-![Módulos en vuex](https://cdn-images-1.medium.com/max/2000/1*rWbfpFXSBnKVmDjdOXxYRw.png)
 
-Estructura
-![Estructura vue y vuex](https://cdn-images-1.medium.com/max/1600/1*UtcKuaTf36yJspMKvttd5g.png)
+![Módulos en vuex](https://cdn-images-1.medium.com/max/2000/1*rWbfpFXSBnKVmDjdOXxYRw.png)
 
 Struct vue
 ```
